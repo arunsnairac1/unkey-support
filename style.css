@@ -40,7 +40,7 @@ body {
   font: 17px/1.55 var(--body);
   overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 
@@ -287,3 +287,8 @@ section { padding: 88px 0; }
 
 /* Keyboard focus */
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* On wide screens the phones stay in view while the tool list scrolls past. */
+@media (min-width: 861px) {
+  .split > .phone, .split > .phones { position: sticky; top: 100px; }
+}
