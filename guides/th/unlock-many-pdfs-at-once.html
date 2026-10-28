@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>วิธีปลดล็อก PDF หลายไฟล์พร้อมกัน (ใบแจ้งยอดรายเดือน) · UnKey</title>
+  <meta name="description" content="ปลดล็อกใบแจ้งยอดทั้งปีในครั้งเดียว: Preview บน Mac ทำได้ทีละไฟล์ UnKey Pro ปลดล็อก PDF ที่ใช้รหัสผ่านเดียวกันเป็นชุด และ qpdf เขียนสคริปต์ได้">
+  <link rel="canonical" href="https://unkeypdf.app/guides/th/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="bn" href="https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="fil" href="https://unkeypdf.app/guides/fil/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="fr" href="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="gu" href="https://unkeypdf.app/guides/gu/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="it" href="https://unkeypdf.app/guides/it/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="kn" href="https://unkeypdf.app/guides/kn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ml" href="https://unkeypdf.app/guides/ml/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="mr" href="https://unkeypdf.app/guides/mr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ms" href="https://unkeypdf.app/guides/ms/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ne" href="https://unkeypdf.app/guides/ne/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="si" href="https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="te" href="https://unkeypdf.app/guides/te/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="th" href="https://unkeypdf.app/guides/th/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ur" href="https://unkeypdf.app/guides/ur/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="vi" href="https://unkeypdf.app/guides/vi/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="วิธีปลดล็อก PDF หลายไฟล์พร้อมกัน (ใบแจ้งยอดรายเดือน) · UnKey">
+  <meta property="og:description" content="ปลดล็อกใบแจ้งยอดทั้งปีในครั้งเดียว: Preview บน Mac ทำได้ทีละไฟล์ UnKey Pro ปลดล็อก PDF ที่ใช้รหัสผ่านเดียวกันเป็นชุด และ qpdf เขียนสคริปต์ได้">
+  <meta property="og:url" content="https://unkeypdf.app/guides/th/unlock-many-pdfs-at-once.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "วิธีปลดล็อก PDF หลายไฟล์พร้อมกัน (ใบแจ้งยอดรายเดือน)", "description": "ปลดล็อกใบแจ้งยอดทั้งปีในครั้งเดียว: Preview บน Mac ทำได้ทีละไฟล์ UnKey Pro ปลดล็อก PDF ที่ใช้รหัสผ่านเดียวกันเป็นชุด และ qpdf เขียนสคริปต์ได้", "inLanguage": "th", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/th/unlock-many-pdfs-at-once.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "th", "mainEntity": [{"@type": "Question", "name": "Preview บน Mac ปลดล็อก PDF หลายไฟล์พร้อมกันได้ไหม", "acceptedAnswer": {"@type": "Answer", "text": "ไม่ได้ เปิด PDF หลายไฟล์ใน Preview ได้ แต่ต้อง export แต่ละไฟล์แยกกันเพื่อลบรหัสผ่าน"}}, {"@type": "Question", "name": "การปลดล็อกเป็นชุดใช้ได้ไหมถ้าใบแจ้งยอดแต่ละฉบับมีรหัสผ่านต่างกัน", "acceptedAnswer": {"@type": "Answer", "text": "การปลดล็อกเป็นชุดใช้รหัสผ่านทีละตัว จัดกลุ่มไฟล์ตามรหัสผ่าน แล้วปลดล็อกไฟล์ที่แปลกออกไปแยกต่างหาก"}}, {"@type": "Question", "name": "การปลดล็อกเป็นชุดของ UnKey ใช้ฟรีไหม", "acceptedAnswer": {"@type": "Answer", "text": "การปลดล็อกเป็นชุดเป็นส่วนหนึ่งของ UnKey Pro ซื้อครั้งเดียว ส่วนการปลดล็อกไฟล์เดี่ยวใช้ได้ฟรี"}}, {"@type": "Question", "name": "การปลดล็อกเป็นชุดทำแบบออนไลน์ไหม", "acceptedAnswer": {"@type": "Answer", "text": "ถ้าใช้ UnKey หรือ qpdf ไม่ใช่ ทั้งสองทำงานบนอุปกรณ์ของคุณเอง และไม่อัปโหลดไฟล์"}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "คู่มือ", "item": "https://unkeypdf.app/guides/th/"}, {"@type": "ListItem", "position": 2, "name": "วิธีปลดล็อก PDF หลายไฟล์พร้อมกัน (ใบแจ้งยอดรายเดือน)", "item": "https://unkeypdf.app/guides/th/unlock-many-pdfs-at-once.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/th/">คู่มือ</a>
+      <a class="label" href="/#tools">เครื่องมือ</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">ช่วยเหลือ</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">ดาวน์โหลดแอป <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/th/">คู่มือ</a> · วิธีทำ</p>
+    <h1 class="poster">วิธีปลดล็อก PDF หลายไฟล์พร้อมกัน (ใบแจ้งยอดรายเดือน)</h1>
+    <p class="meta muted">อัปเดตเมื่อ ตุลาคม 2026</p>
+    <p class="label langs">อ่านเป็นภาษา: <a href="/guides/unlock-many-pdfs-at-once.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/unlock-many-pdfs-at-once.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/bn/unlock-many-pdfs-at-once.html" hreflang="bn" lang="bn">বাংলা</a> · <a href="/guides/de/unlock-many-pdfs-at-once.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/unlock-many-pdfs-at-once.html" hreflang="es" lang="es">Español</a> · <a href="/guides/fil/unlock-many-pdfs-at-once.html" hreflang="fil" lang="fil">Filipino</a> · <a href="/guides/fr/unlock-many-pdfs-at-once.html" hreflang="fr" lang="fr">Français</a> · <a href="/guides/gu/unlock-many-pdfs-at-once.html" hreflang="gu" lang="gu">ગુજરાતી</a> · <a href="/guides/hi/unlock-many-pdfs-at-once.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/unlock-many-pdfs-at-once.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/it/unlock-many-pdfs-at-once.html" hreflang="it" lang="it">Italiano</a> · <a href="/guides/kn/unlock-many-pdfs-at-once.html" hreflang="kn" lang="kn">ಕನ್ನಡ</a> · <a href="/guides/ml/unlock-many-pdfs-at-once.html" hreflang="ml" lang="ml">മലയാളം</a> · <a href="/guides/mr/unlock-many-pdfs-at-once.html" hreflang="mr" lang="mr">मराठी</a> · <a href="/guides/ms/unlock-many-pdfs-at-once.html" hreflang="ms" lang="ms">Bahasa Melayu</a> · <a href="/guides/ne/unlock-many-pdfs-at-once.html" hreflang="ne" lang="ne">नेपाली</a> · <a href="/guides/pt/unlock-many-pdfs-at-once.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/si/unlock-many-pdfs-at-once.html" hreflang="si" lang="si">සිංහල</a> · <a href="/guides/ta/unlock-many-pdfs-at-once.html" hreflang="ta" lang="ta">தமிழ்</a> · <a href="/guides/te/unlock-many-pdfs-at-once.html" hreflang="te" lang="te">తెలుగు</a> · <a href="/guides/th/unlock-many-pdfs-at-once.html" hreflang="th" lang="th" aria-current="page">ไทย</a> · <a href="/guides/ur/unlock-many-pdfs-at-once.html" hreflang="ur" lang="ur">اردو</a> · <a href="/guides/vi/unlock-many-pdfs-at-once.html" hreflang="vi" lang="vi">Tiếng Việt</a></p>
+    <div class="prose">
+      <p class="callout">Preview จัดการ PDF ได้ทีละไฟล์ หากต้องการปลดล็อกใบแจ้งยอดหลายฉบับที่ใช้รหัสผ่านเดียวกัน ให้ใช้เครื่องมือแบบชุด เช่น UnKey Pro หรือสคริปต์ qpdf</p>
+      
+      <p>ถ้าคุณมีใบแจ้งยอดกองหนึ่ง สมมติ 12 เดือนจากธนาคารเดียวกัน ที่ใช้รหัสผ่านเดียวกันทั้งหมด คุณไม่ต้องปลดล็อกทีละไฟล์ เครื่องมือในตัวอย่าง Preview ทำงานทีละไฟล์ เครื่องมือแบบชุดอย่าง UnKey Pro หรือสคริปต์ qpdf สั้น ๆ บน Mac ทำทั้งหมดพร้อมกันได้ คุณยังต้องรู้รหัสผ่าน</p><h2>ทำไมการปลดล็อกเป็นชุดจึงช่วยได้</h2><p>ผู้ออกเอกสารส่วนใหญ่ป้องกันใบแจ้งยอดทุกฉบับด้วยรูปแบบรหัสผ่านเดียวกันที่อิงข้อมูลของคุณ รหัสผ่านของเดือนตุลาคมจึงมักเปิดมกราคมถึงกันยายนได้ด้วย นั่นคือตอนที่เครื่องมือแบบชุดช่วยประหยัดเวลา โดยทั่วไปคือช่วงยื่นภาษี ยื่นสมัครสินเชื่อ หรือตอนส่งใบแจ้งยอดทั้งปีให้นักบัญชี</p><h2>ตัวเลือกฟรี: Preview บน Mac ทีละไฟล์</h2><p>Preview เปิด PDF หลายไฟล์พร้อมกันได้ แต่การลบรหัสผ่านต้องทำทีละไฟล์ สำหรับ PDF แต่ละไฟล์ คุณใส่รหัสผ่าน เลือก <strong>File &gt; Export</strong> ตรวจว่า <strong>Require Password To Open Document</strong> ปิดอยู่ใต้ <strong>Permissions</strong> แล้วบันทึก (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple: Password-protect a PDF in Preview</a>) สำหรับสามสี่ไฟล์ก็ไม่เป็นไร แต่สามสิบไฟล์น่าเบื่อและพลาดไฟล์ได้ง่าย</p><p>บน iPhone และ iPad วิธีฟรี (การตั้งค่า Lock ของ Preview หรือวิธีพิมพ์เป็น PDF) ก็ทำได้ทีละไฟล์เช่นกัน</p><h2>UnKey Pro: ปลดล็อกเป็นชุดบน iPhone, iPad และ Mac</h2><ol><li>รวมใบแจ้งยอดไว้ในโฟลเดอร์เดียวใน Files หรือ Finder</li><li>ใน <a href="/">UnKey</a> ใช้การปลดล็อกเป็นชุดแล้วเลือกไฟล์ บน Mac ลากไฟล์ไปวางบนหน้าต่างได้</li><li>ใส่รหัสผ่าน หรือให้ UnKey ใช้รหัสผ่านที่คุณบันทึกไว้ก่อนหน้าด้วย Face ID หรือ Touch ID</li><li>UnKey บันทึกสำเนาที่ปลดล็อกของแต่ละไฟล์ ตรวจผลลัพธ์ และปลดล็อกไฟล์ที่ใช้รหัสผ่านต่างออกไปแยกต่างหาก</li></ol><p>การปลดล็อกเป็นชุดเป็นส่วนหนึ่งของ UnKey Pro ซื้อครั้งเดียว (₹249 ในอินเดีย $5.99 ในสหรัฐฯ) Pro ยังเพิ่มการสแกน การเซ็นและกรอกเอกสาร การล็อก การบีบอัด และการปิดบังข้อมูล และการซื้อครั้งเดียวครอบคลุม iPhone, iPad และ Mac การปลดล็อกไฟล์เดี่ยวใช้ได้ฟรี ทุกอย่างเกิดขึ้นบนอุปกรณ์ของคุณ และไม่มีอะไรถูกอัปโหลด</p><h2>ตัวเลือกฟรีสำหรับผู้ใช้ที่ชำนาญ: qpdf</h2><p>qpdf เป็นเครื่องมือบรรทัดคำสั่งโอเพนซอร์สฟรี เมื่อใช้ <code>--password</code> และ <code>--decrypt</code> จะเขียนสำเนาที่ไม่เข้ารหัสของไฟล์ (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf documentation</a>) ใน Terminal ลูปวนทั้งโฟลเดอร์หน้าตาแบบนี้:</p><p><code>for f in *.pdf; do qpdf --decrypt --password="$PDFPASS" "$f" "unlocked-$f"; done</code></p><p>ตั้งค่า <code>PDFPASS</code> ก่อน โดยควรไม่ให้ค้างอยู่ในประวัติของเชลล์ ไฟล์ที่ใช้รหัสผ่านต่างออกไปจะล้มเหลวพร้อมข้อผิดพลาด ไม่ถูกข้ามไปเงียบ ๆ คุณต้องติดตั้ง qpdf เอง เช่นผ่าน Homebrew</p><h2>เมื่อไฟล์ไม่ได้ใช้รหัสผ่านเดียวกัน</h2><ul><li><strong>คนละบัญชี:</strong> บัญชีออมทรัพย์และบัตรเครดิตจากธนาคารเดียวกันมักใช้รูปแบบต่างกัน แยกไว้คนละโฟลเดอร์</li><li><strong>รูปแบบเปลี่ยน:</strong> ผู้ออกเอกสารบางครั้งเปลี่ยนรูปแบบ ใบแจ้งยอดเก่าอาจต้องใช้รูปแบบเดิม</li><li><strong>บัญชีร่วมหรือบัญชีธุรกิจ:</strong> รหัสผ่านอาจอิงข้อมูลของผู้ถือบัญชีหลักหรือของบริษัท</li></ul><h2>หลังปลดล็อกเป็นชุด</h2><ul><li>เปิดสำเนาสองสามไฟล์เพื่อตรวจก่อนลบต้นฉบับ</li><li>ใช้ชื่อที่ชัดเจน เช่น "2026-04-statement-unlocked.pdf"</li><li>เก็บโฟลเดอร์ที่ปลดล็อกไว้เป็นส่วนตัว ใบแจ้งยอดทั้งปีคือภาพรวมการเงินของคุณอย่างละเอียด</li><li>ถ้าจะส่งให้นักบัญชี ลองส่งต้นฉบับที่มีรหัสผ่านแล้วแจ้งรหัสผ่านแยกต่างหาก</li></ul>
+      <h2>คำถาม</h2>
+      <div class="faq"><details><summary>Preview บน Mac ปลดล็อก PDF หลายไฟล์พร้อมกันได้ไหม</summary><p>ไม่ได้ เปิด PDF หลายไฟล์ใน Preview ได้ แต่ต้อง export แต่ละไฟล์แยกกันเพื่อลบรหัสผ่าน</p></details><details><summary>การปลดล็อกเป็นชุดใช้ได้ไหมถ้าใบแจ้งยอดแต่ละฉบับมีรหัสผ่านต่างกัน</summary><p>การปลดล็อกเป็นชุดใช้รหัสผ่านทีละตัว จัดกลุ่มไฟล์ตามรหัสผ่าน แล้วปลดล็อกไฟล์ที่แปลกออกไปแยกต่างหาก</p></details><details><summary>การปลดล็อกเป็นชุดของ UnKey ใช้ฟรีไหม</summary><p>การปลดล็อกเป็นชุดเป็นส่วนหนึ่งของ UnKey Pro ซื้อครั้งเดียว ส่วนการปลดล็อกไฟล์เดี่ยวใช้ได้ฟรี</p></details><details><summary>การปลดล็อกเป็นชุดทำแบบออนไลน์ไหม</summary><p>ถ้าใช้ UnKey หรือ qpdf ไม่ใช่ ทั้งสองทำงานบนอุปกรณ์ของคุณเอง และไม่อัปโหลดไฟล์</p></details></div>
+      <h2>แหล่งข้อมูล</h2>
+      <ul class="sources"><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li></ul>
+      <p class="muted small">รูปแบบอาจเปลี่ยนแปลงได้ หากรหัสผ่านใช้ไม่ได้ ให้ตรวจสอบอีเมลที่ส่งมาพร้อมเอกสาร หรือติดต่อผู้ออกเอกสาร UnKey ไม่มีส่วนเกี่ยวข้องกับธนาคาร นายจ้าง หรือหน่วยงานใดที่กล่าวถึงในที่นี้</p>
+      <p class="muted small">แปลจากภาษาอังกฤษ หากมีข้อแตกต่าง ให้ถือตามหน้าภาษาอังกฤษ</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">ปลดล็อก <span class="hl" dir="auto">ได้ในครั้งเดียว</span></p>
+      <p>UnKey ลบรหัสผ่านออกจาก PDF ที่คุณเปิดได้อยู่แล้ว บน iPhone, iPad และ Mac ทำงานออฟไลน์ ไม่มีการอัปโหลดใดๆ บันทึกรหัสผ่านครั้งเดียว แล้ว Face ID จะเปิดใบแจ้งยอดเดือนหน้าให้</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">ดาวน์โหลด UnKey <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="คู่มือที่เกี่ยวข้อง">
+      <div class="section-head"><span class="label">คู่มือที่เกี่ยวข้อง</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/th/compress-scanned-pdf-for-upload-limits.html"><strong>ลดขนาดไฟล์ PDF สแกนให้อัปโหลดได้ตามขีดจำกัด</strong></a><span>PDF ที่สแกนมีขนาดใหญ่เพราะทุกหน้าเป็นรูปถ่าย ลดขนาดได้ด้วย Reduce File Size ของ Preview บน Mac หรือตัวเลือกส่งออกของ Preview บน iPhone สแกนให้น้อยหน้าและเรียบง่ายขึ้น และลบรหัสผ่านก่อนอัปโหลด</span></div></li><li><span class="num">→</span><div><a href="/guides/th/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: รูปแบบวันเกิดในรหัสผ่าน PDF อธิบาย</strong></a><span>DD คือวันที่ 2 หลัก MM คือเดือน 2 หลัก และ YY หรือ YYYY คือปี โดยมีเลขศูนย์นำหน้าเสมอ: 7 มีนาคม 1994 คือ 0703 ในรูปแบบ DDMM และ 07031994 ในรูปแบบ DDMMYYYY</span></div></li><li><span class="num">→</span><div><a href="/guides/th/forgot-pdf-password.html"><strong>ลืมรหัสผ่าน PDF ทำอย่างไรได้บ้าง (2026)</strong></a><span>รหัสผ่าน PDF ที่ไม่รู้ลบออกอย่างถูกต้องไม่ได้ ให้หารูปแบบจากอีเมลต้นฉบับ ดาวน์โหลดเอกสารใหม่ หรือถามผู้ส่ง</span></div></li><li><span class="num">→</span><div><a href="/guides/th/how-bank-pdf-passwords-are-built.html"><strong>รหัสผ่าน PDF ใบแจ้งยอดธนาคารสร้างขึ้นอย่างไร</strong></a><span>รหัสผ่านใบแจ้งยอดส่วนใหญ่นำข้อมูลที่ธนาคารมีอยู่แล้วสองอย่างมาต่อกัน เช่น ตัวอักษรแรก 4 ตัวของชื่อกับวันเกิด (DDMM) รหัสลูกค้า หรือเลขท้ายของบัตรหรือเบอร์มือถือ</span></div></li><li><span class="num">→</span><div><a href="/guides/th/compress-scanned-pdf-for-upload-limits.html"><strong>ลดขนาดไฟล์ PDF สแกนให้อัปโหลดได้ตามขีดจำกัด</strong></a><span>PDF ที่สแกนมีขนาดใหญ่เพราะทุกหน้าเป็นรูปถ่าย ลดขนาดได้ด้วย Reduce File Size ของ Preview บน Mac หรือตัวเลือกส่งออกของ Preview บน iPhone สแกนให้น้อยหน้าและเรียบง่ายขึ้น และลบรหัสผ่านก่อนอัปโหลด</span></div></li><li><span class="num">→</span><div><a href="/guides/th/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: รูปแบบวันเกิดในรหัสผ่าน PDF อธิบาย</strong></a><span>DD คือวันที่ 2 หลัก MM คือเดือน 2 หลัก และ YY หรือ YYYY คือปี โดยมีเลขศูนย์นำหน้าเสมอ: 7 มีนาคม 1994 คือ 0703 ในรูปแบบ DDMM และ 07031994 ในรูปแบบ DDMMYYYY</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/th/">คู่มือ</a>
+      <a href="/support.html">ช่วยเหลือ</a>
+      <a href="/privacy.html">ความเป็นส่วนตัว</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">ข้อกำหนด</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

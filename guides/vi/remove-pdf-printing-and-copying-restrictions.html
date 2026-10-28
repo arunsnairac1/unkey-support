@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giải thích hạn chế in và sao chép của PDF · UnKey</title>
+  <meta name="description" content="PDF có thể có mật khẩu mở và một mật khẩu chủ (quyền hạn) riêng chặn in hoặc sao chép. Đây là điểm khác nhau và cách thay đổi chúng.">
+  <link rel="canonical" href="https://unkeypdf.app/guides/vi/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="bn" href="https://unkeypdf.app/guides/bn/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="fil" href="https://unkeypdf.app/guides/fil/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="fr" href="https://unkeypdf.app/guides/fr/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="gu" href="https://unkeypdf.app/guides/gu/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="it" href="https://unkeypdf.app/guides/it/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="kn" href="https://unkeypdf.app/guides/kn/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ml" href="https://unkeypdf.app/guides/ml/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="mr" href="https://unkeypdf.app/guides/mr/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ms" href="https://unkeypdf.app/guides/ms/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ne" href="https://unkeypdf.app/guides/ne/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="si" href="https://unkeypdf.app/guides/si/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="te" href="https://unkeypdf.app/guides/te/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="th" href="https://unkeypdf.app/guides/th/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="ur" href="https://unkeypdf.app/guides/ur/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="vi" href="https://unkeypdf.app/guides/vi/remove-pdf-printing-and-copying-restrictions.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Giải thích hạn chế in và sao chép của PDF · UnKey">
+  <meta property="og:description" content="PDF có thể có mật khẩu mở và một mật khẩu chủ (quyền hạn) riêng chặn in hoặc sao chép. Đây là điểm khác nhau và cách thay đổi chúng.">
+  <meta property="og:url" content="https://unkeypdf.app/guides/vi/remove-pdf-printing-and-copying-restrictions.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Giải thích hạn chế in và sao chép của PDF", "description": "PDF có thể có mật khẩu mở và một mật khẩu chủ (quyền hạn) riêng chặn in hoặc sao chép. Đây là điểm khác nhau và cách thay đổi chúng.", "inLanguage": "vi", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/vi/remove-pdf-printing-and-copying-restrictions.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "vi", "mainEntity": [{"@type": "Question", "name": "Mật khẩu chủ của PDF là gì?", "acceptedAnswer": {"@type": "Answer", "text": "Đó là mật khẩu kiểm soát quyền hạn như in, sao chép và chỉnh sửa. Tệp mở được mà không cần nó, nhưng các thao tác bị hạn chế sẽ bị chặn trong những trình đọc tôn trọng cài đặt này."}}, {"@type": "Question", "name": "Vì sao tôi mở được PDF nhưng không in được?", "acceptedAnswer": {"@type": "Answer", "text": "Tệp có mật khẩu chủ (quyền hạn) không cho in. Hãy nhập mật khẩu chủ trong Preview ở File > Edit Permissions, hoặc nhờ người gửi một bản không hạn chế."}}, {"@type": "Question", "name": "Sao kê ngân hàng có hạn chế in không?", "acceptedAnswer": {"@type": "Answer", "text": "Thường là không. Chúng thường chỉ dùng mật khẩu mở, nên khi tệp đã mở thì bạn in được."}}, {"@type": "Question", "name": "Gỡ hạn chế sao chép PDF có hợp pháp không?", "acceptedAnswer": {"@type": "Answer", "text": "Thay đổi quyền hạn trên tệp của chính bạn, bằng mật khẩu chủ của bạn, thì được. Vượt qua hạn chế trên tài liệu của người khác có thể vi phạm bản quyền hoặc điều khoản hợp đồng, nên hãy hỏi chủ sở hữu."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Hướng dẫn", "item": "https://unkeypdf.app/guides/vi/"}, {"@type": "ListItem", "position": 2, "name": "Giải thích hạn chế in và sao chép của PDF", "item": "https://unkeypdf.app/guides/vi/remove-pdf-printing-and-copying-restrictions.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/vi/">Hướng dẫn</a>
+      <a class="label" href="/#tools">Công cụ</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">Hỗ trợ</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">Tải ứng dụng <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/vi/">Hướng dẫn</a> · Hướng dẫn</p>
+    <h1 class="poster">Giải thích hạn chế in và sao chép của PDF</h1>
+    <p class="meta muted">Cập nhật tháng 10/2026</p>
+    <p class="label langs">Đọc bằng: <a href="/guides/remove-pdf-printing-and-copying-restrictions.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/remove-pdf-printing-and-copying-restrictions.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/bn/remove-pdf-printing-and-copying-restrictions.html" hreflang="bn" lang="bn">বাংলা</a> · <a href="/guides/de/remove-pdf-printing-and-copying-restrictions.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/remove-pdf-printing-and-copying-restrictions.html" hreflang="es" lang="es">Español</a> · <a href="/guides/fil/remove-pdf-printing-and-copying-restrictions.html" hreflang="fil" lang="fil">Filipino</a> · <a href="/guides/fr/remove-pdf-printing-and-copying-restrictions.html" hreflang="fr" lang="fr">Français</a> · <a href="/guides/gu/remove-pdf-printing-and-copying-restrictions.html" hreflang="gu" lang="gu">ગુજરાતી</a> · <a href="/guides/hi/remove-pdf-printing-and-copying-restrictions.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/remove-pdf-printing-and-copying-restrictions.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/it/remove-pdf-printing-and-copying-restrictions.html" hreflang="it" lang="it">Italiano</a> · <a href="/guides/kn/remove-pdf-printing-and-copying-restrictions.html" hreflang="kn" lang="kn">ಕನ್ನಡ</a> · <a href="/guides/ml/remove-pdf-printing-and-copying-restrictions.html" hreflang="ml" lang="ml">മലയാളം</a> · <a href="/guides/mr/remove-pdf-printing-and-copying-restrictions.html" hreflang="mr" lang="mr">मराठी</a> · <a href="/guides/ms/remove-pdf-printing-and-copying-restrictions.html" hreflang="ms" lang="ms">Bahasa Melayu</a> · <a href="/guides/ne/remove-pdf-printing-and-copying-restrictions.html" hreflang="ne" lang="ne">नेपाली</a> · <a href="/guides/pt/remove-pdf-printing-and-copying-restrictions.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/si/remove-pdf-printing-and-copying-restrictions.html" hreflang="si" lang="si">සිංහල</a> · <a href="/guides/ta/remove-pdf-printing-and-copying-restrictions.html" hreflang="ta" lang="ta">தமிழ்</a> · <a href="/guides/te/remove-pdf-printing-and-copying-restrictions.html" hreflang="te" lang="te">తెలుగు</a> · <a href="/guides/th/remove-pdf-printing-and-copying-restrictions.html" hreflang="th" lang="th">ไทย</a> · <a href="/guides/ur/remove-pdf-printing-and-copying-restrictions.html" hreflang="ur" lang="ur">اردو</a> · <a href="/guides/vi/remove-pdf-printing-and-copying-restrictions.html" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a></p>
+    <div class="prose">
+      <p class="callout">Mật khẩu mở ngăn mọi người đọc PDF; mật khẩu chủ (quyền hạn) chỉ hạn chế các thao tác như in, sao chép và chỉnh sửa.</p>
+      
+      <p>PDF có thể có hai mật khẩu khác nhau. <strong>Mật khẩu mở</strong> (còn gọi là mật khẩu người dùng) cần có để xem tệp. <strong>Mật khẩu chủ</strong> (còn gọi là mật khẩu quyền hạn) cho phép bạn mở tệp nhưng hạn chế những việc như in, sao chép chữ hoặc chỉnh sửa. Để gỡ hạn chế đúng cách, bạn cần có mật khẩu chủ.</p><h2>Hai mật khẩu nói đơn giản</h2><table><thead><tr><th></th><th>Mật khẩu mở (người dùng)</th><th>Mật khẩu chủ (quyền hạn)</th></tr></thead><tbody><tr><td>Bạn thấy gì</td><td>Hộp hỏi mật khẩu trước khi hiện bất cứ nội dung nào</td><td>Tệp mở được, nhưng Print hoặc Copy bị mờ</td></tr><tr><td>Bảo vệ cái gì</td><td>Toàn bộ nội dung, đã được mã hóa</td><td>Các thao tác như in, sao chép, chỉnh sửa và bình luận</td></tr><tr><td>Thường dùng cho</td><td>Sao kê ngân hàng, giấy tờ thuế</td><td>Báo cáo công bố, biểu mẫu, hợp đồng</td></tr></tbody></table><p>Adobe cũng mô tả sự phân chia này như vậy. Cần mật khẩu Document Open để mở PDF, còn mật khẩu quyền hạn hạn chế các tính năng như in, chỉnh sửa và sao chép (<a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe: Password security overview</a>). Tài liệu của qpdf bổ sung một chi tiết quan trọng: các trình đọc “áp dụng hạn chế bảo mật với tệp được mở bằng mật khẩu người dùng” và “cho phép thay đổi hoặc bỏ qua hạn chế bảo mật khi tệp được mở bằng mật khẩu chủ” (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf</a>).</p><h2>Hạn chế được thực thi như thế nào</h2><p>Các hạn chế phụ thuộc vào việc trình đọc PDF có chọn tôn trọng chúng hay không. Adobe lưu ý rằng sản phẩm của họ thực thi các hạn chế, nhưng nếu sản phẩm của bên thứ ba không hỗ trợ những cài đặt này, người nhận có thể vượt qua một phần hoặc toàn bộ hạn chế (<a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe</a>). Vì vậy mật khẩu quyền hạn giống một lời nhắc lịch sự “xin đừng” hơn là một ổ khóa. Nhưng đó không phải lý do để phớt lờ ý muốn của tác giả. Nếu ai đó hạn chế sao chép, thường có lý do, như bản quyền hay hợp đồng.</p><h2>Thay đổi hạn chế khi bạn có mật khẩu chủ</h2><p><strong>Trên Mac (Preview):</strong> mở PDF, chọn <strong>File &gt; Edit Permissions</strong> và nhập mật khẩu chủ. Sau đó bạn chọn những thao tác muốn cho phép mà không cần mật khẩu và nhấp <strong>Apply</strong> (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple: Password-protect a PDF in Preview on Mac</a>). Bảng Permissions này cũng xuất hiện trong <strong>File &gt; Export</strong> nếu bạn muốn một bản sao mới.</p><p><strong>Trong Adobe Acrobat:</strong> hướng dẫn của Adobe để gỡ mật khẩu quyền hạn yêu cầu bạn gõ nó vào hộp Enter Password (<a href="https://www.adobe.com/acrobat/how-to/unlock-pdf.html">Adobe: How to remove a PDF password</a>).</p><p><strong>Trên dòng lệnh:</strong> qpdf với <code>--password=OWNERPASSWORD --decrypt</code> ghi ra một bản sao không mã hóa. Tài liệu của nó lưu ý rằng tùy chọn này không dành để vượt qua các hạn chế mà nhà sản xuất đặt lên tệp (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf</a>).</p><h2>Tài liệu của chính bạn có cả hai mật khẩu</h2><p>Sao kê ngân hàng thường chỉ dùng mật khẩu mở. Khi đã mở được, bạn thường in và sao chép thoải mái. Nếu bạn tự tạo PDF trong Preview hoặc Acrobat và đặt cả hai mật khẩu, hãy dùng mật khẩu chủ để thay đổi quyền hạn hoặc xuất một bản không hạn chế.</p><p>Để gỡ mật khẩu mở khỏi tệp của chính bạn, như sao kê hằng tháng, bạn có thể dùng Preview trên Mac hoặc <a href="/">UnKey</a> trên iPhone, iPad hay Mac. UnKey hoạt động ngoại tuyến và chỉ dùng được với mật khẩu bạn đã biết.</p><h2>Khi bạn không có mật khẩu chủ</h2><ul><li>Hỏi tác giả hoặc người gửi một bản không hạn chế, hoặc xin phép in hay sao chép.</li><li>Với biểu mẫu cần điền, hãy kiểm tra xem việc điền có được cho phép sẵn không. Nhiều PDF bị hạn chế vẫn cho phép điền biểu mẫu.</li><li>Với tài liệu công việc hoặc pháp lý, hãy coi như hạn chế là có chủ ý.</li></ul>
+      <h2>Câu hỏi</h2>
+      <div class="faq"><details><summary>Mật khẩu chủ của PDF là gì?</summary><p>Đó là mật khẩu kiểm soát quyền hạn như in, sao chép và chỉnh sửa. Tệp mở được mà không cần nó, nhưng các thao tác bị hạn chế sẽ bị chặn trong những trình đọc tôn trọng cài đặt này.</p></details><details><summary>Vì sao tôi mở được PDF nhưng không in được?</summary><p>Tệp có mật khẩu chủ (quyền hạn) không cho in. Hãy nhập mật khẩu chủ trong Preview ở File &gt; Edit Permissions, hoặc nhờ người gửi một bản không hạn chế.</p></details><details><summary>Sao kê ngân hàng có hạn chế in không?</summary><p>Thường là không. Chúng thường chỉ dùng mật khẩu mở, nên khi tệp đã mở thì bạn in được.</p></details><details><summary>Gỡ hạn chế sao chép PDF có hợp pháp không?</summary><p>Thay đổi quyền hạn trên tệp của chính bạn, bằng mật khẩu chủ của bạn, thì được. Vượt qua hạn chế trên tài liệu của người khác có thể vi phạm bản quyền hoặc điều khoản hợp đồng, nên hãy hỏi chủ sở hữu.</p></details></div>
+      <h2>Nguồn tham khảo</h2>
+      <ul class="sources"><li><a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe – Password security overview in Acrobat</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://www.adobe.com/acrobat/how-to/unlock-pdf.html">Adobe – How to remove a PDF password</a></li></ul>
+      <p class="muted small">Định dạng có thể thay đổi. Nếu mật khẩu không dùng được, hãy kiểm tra email đi kèm tài liệu hoặc liên hệ đơn vị phát hành. UnKey không liên kết với bất kỳ ngân hàng, người sử dụng lao động hay cơ quan nào được nhắc đến ở đây.</p>
+      <p class="muted small">Dịch từ tiếng Anh. Nếu có khác biệt, trang tiếng Anh là bản tham chiếu.</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">Mở khóa <span class="hl" dir="auto">một lần.</span></p>
+      <p>UnKey gỡ mật khẩu khỏi những tệp PDF bạn đã mở được, trên iPhone, iPad và Mac. Hoạt động ngoại tuyến, không tải gì lên. Lưu mật khẩu một lần, Face ID sẽ mở sao kê tháng sau.</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">Tải UnKey <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="Hướng dẫn liên quan">
+      <div class="section-head"><span class="label">Hướng dẫn liên quan</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/vi/compress-scanned-pdf-for-upload-limits.html"><strong>Nén PDF scan để vừa giới hạn dung lượng khi tải lên</strong></a><span>PDF scan nặng vì mỗi trang là một bức ảnh; hãy thu nhỏ bằng Reduce File Size của Preview trên Mac hoặc tùy chọn xuất của Preview trên iPhone, quét ít trang và đơn giản hơn, và gỡ mật khẩu trước khi tải lên.</span></div></li><li><span class="num">→</span><div><a href="/guides/vi/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: giải thích các định dạng ngày sinh</strong></a><span>DD là ngày hai chữ số, MM là tháng hai chữ số, YY hoặc YYYY là năm, luôn có số 0 đứng đầu: ngày 7 tháng 3 năm 1994 là 0703 theo DDMM và 07031994 theo DDMMYYYY.</span></div></li><li><span class="num">→</span><div><a href="/guides/vi/forgot-pdf-password.html"><strong>Quên mật khẩu PDF? Bạn có thể làm gì (2026)</strong></a><span>Mật khẩu PDF không biết thì không thể gỡ một cách hợp lệ; hãy tìm định dạng trong email gốc, tải lại tài liệu hoặc hỏi người gửi.</span></div></li><li><span class="num">→</span><div><a href="/guides/vi/how-bank-pdf-passwords-are-built.html"><strong>Mật khẩu PDF sao kê ngân hàng được tạo như thế nào</strong></a><span>Hầu hết mật khẩu sao kê ghép hai thông tin ngân hàng đã có, như bốn chữ cái đầu của tên cộng ngày sinh (DDMM), mã khách hàng, hoặc những số cuối của thẻ hay số điện thoại.</span></div></li><li><span class="num">→</span><div><a href="/guides/vi/compress-scanned-pdf-for-upload-limits.html"><strong>Nén PDF scan để vừa giới hạn dung lượng khi tải lên</strong></a><span>PDF scan nặng vì mỗi trang là một bức ảnh; hãy thu nhỏ bằng Reduce File Size của Preview trên Mac hoặc tùy chọn xuất của Preview trên iPhone, quét ít trang và đơn giản hơn, và gỡ mật khẩu trước khi tải lên.</span></div></li><li><span class="num">→</span><div><a href="/guides/vi/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: giải thích các định dạng ngày sinh</strong></a><span>DD là ngày hai chữ số, MM là tháng hai chữ số, YY hoặc YYYY là năm, luôn có số 0 đứng đầu: ngày 7 tháng 3 năm 1994 là 0703 theo DDMM và 07031994 theo DDMMYYYY.</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/vi/">Hướng dẫn</a>
+      <a href="/support.html">Hỗ trợ</a>
+      <a href="/privacy.html">Quyền riêng tư</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Điều khoản</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
