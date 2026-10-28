@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF බොහොමයක් එකවර අගුළු අරින්නේ කෙසේද (මාසික ප්‍රකාශන) · UnKey</title>
+  <meta name="description" content="වසරක ප්‍රකාශන එකවර අගුළු අරින්න: Mac Preview එකවර එක් ගොනුවක්, UnKey Pro හට එකම මුරපදය ඇති PDF batch-unlock කළ හැක, සහ qpdf script කළ හැක.">
+  <link rel="canonical" href="https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="bn" href="https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="fr" href="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="gu" href="https://unkeypdf.app/guides/gu/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="kn" href="https://unkeypdf.app/guides/kn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ml" href="https://unkeypdf.app/guides/ml/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="mr" href="https://unkeypdf.app/guides/mr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="si" href="https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="te" href="https://unkeypdf.app/guides/te/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PDF බොහොමයක් එකවර අගුළු අරින්නේ කෙසේද (මාසික ප්‍රකාශන) · UnKey">
+  <meta property="og:description" content="වසරක ප්‍රකාශන එකවර අගුළු අරින්න: Mac Preview එකවර එක් ගොනුවක්, UnKey Pro හට එකම මුරපදය ඇති PDF batch-unlock කළ හැක, සහ qpdf script කළ හැක.">
+  <meta property="og:url" content="https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PDF බොහොමයක් එකවර අගුළු අරින්නේ කෙසේද (මාසික ප්‍රකාශන)", "description": "වසරක ප්‍රකාශන එකවර අගුළු අරින්න: Mac Preview එකවර එක් ගොනුවක්, UnKey Pro හට එකම මුරපදය ඇති PDF batch-unlock කළ හැක, සහ qpdf script කළ හැක.", "inLanguage": "si", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "si", "mainEntity": [{"@type": "Question", "name": "Mac Preview හට PDF කිහිපයක් එකවර අගුළු ඇරිය හැකිද?", "acceptedAnswer": {"@type": "Answer", "text": "නැත. Preview හි බොහෝ PDF විවෘත කළ හැකි නමුත්, ඒවායේ මුරපදය ඉවත් කිරීමට සෑම එකක්ම වෙන වෙනම export කළ යුතුය."}}, {"@type": "Question", "name": "සෑම ප්‍රකාශනයකටම වෙනස් මුරපදයක් ඇත්නම් batch unlocking ක්‍රියා කරයිද?", "acceptedAnswer": {"@type": "Answer", "text": "Batch එකක් එකවර එක් මුරපදයකින් ක්‍රියා කරයි. ගොනු මුරපදය අනුව කාණ්ඩ කර, වෙනස් ඒවා වෙන වෙනම අගුළු අරින්න."}}, {"@type": "Question", "name": "UnKey හි batch unlock නොමිලේද?", "acceptedAnswer": {"@type": "Answer", "text": "Batch unlock යනු එක්වරක් ගෙවන UnKey Pro හි කොටසකි. තනි ගොනු අගුළු ඇරීම නොමිලේ."}}, {"@type": "Question", "name": "Batch unlocking online කරනවාද?", "acceptedAnswer": {"@type": "Answer", "text": "UnKey හෝ qpdf සමඟ නැත. දෙකම ක්‍රියා කරන්නේ ඔබේම උපාංගයේ ය, ගොනු උඩුගත නොවේ."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "මාර්ගෝපදේශ", "item": "https://unkeypdf.app/guides/si/"}, {"@type": "ListItem", "position": 2, "name": "PDF බොහොමයක් එකවර අගුළු අරින්නේ කෙසේද (මාසික ප්‍රකාශන)", "item": "https://unkeypdf.app/guides/si/unlock-many-pdfs-at-once.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/si/">මාර්ගෝපදේශ</a>
+      <a class="label" href="/#tools">මෙවලම්</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">සහාය</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">යෙදුම ලබාගන්න <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/si/">මාර්ගෝපදේශ</a> · කරන ආකාරය</p>
+    <h1 class="poster">PDF බොහොමයක් එකවර අගුළු අරින්නේ කෙසේද (මාසික ප්‍රකාශන)</h1>
+    <p class="meta muted">2026 ඔක්තෝබර් යාවත්කාලීන කළා</p>
+    <p class="label langs">මෙම භාෂාවෙන් කියවන්න: <a href="/guides/unlock-many-pdfs-at-once.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/unlock-many-pdfs-at-once.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/bn/unlock-many-pdfs-at-once.html" hreflang="bn" lang="bn">বাংলা</a> · <a href="/guides/de/unlock-many-pdfs-at-once.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/unlock-many-pdfs-at-once.html" hreflang="es" lang="es">Español</a> · <a href="/guides/fr/unlock-many-pdfs-at-once.html" hreflang="fr" lang="fr">Français</a> · <a href="/guides/gu/unlock-many-pdfs-at-once.html" hreflang="gu" lang="gu">ગુજરાતી</a> · <a href="/guides/hi/unlock-many-pdfs-at-once.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/unlock-many-pdfs-at-once.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/kn/unlock-many-pdfs-at-once.html" hreflang="kn" lang="kn">ಕನ್ನಡ</a> · <a href="/guides/ml/unlock-many-pdfs-at-once.html" hreflang="ml" lang="ml">മലയാളം</a> · <a href="/guides/mr/unlock-many-pdfs-at-once.html" hreflang="mr" lang="mr">मराठी</a> · <a href="/guides/pt/unlock-many-pdfs-at-once.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/si/unlock-many-pdfs-at-once.html" hreflang="si" lang="si" aria-current="page">සිංහල</a> · <a href="/guides/ta/unlock-many-pdfs-at-once.html" hreflang="ta" lang="ta">தமிழ்</a> · <a href="/guides/te/unlock-many-pdfs-at-once.html" hreflang="te" lang="te">తెలుగు</a></p>
+    <div class="prose">
+      <p class="callout">Preview එකවර එක් PDF එකක් හසුරුවයි; එකම මුරපදය ඇති ප්‍රකාශන බොහොමයක් අගුළු අරීමට UnKey Pro වැනි batch මෙවලමක් හෝ qpdf script එකක් භාවිතා කරන්න.</p>
+      
+      <p>ඔබ සතුව එකම බැංකුවෙන් මාස දොළහක් වැනි, සියල්ලම එකම මුරපදය භාවිතා කරන ප්‍රකාශන ගොඩක් තිබේ නම්, ඒවා එකින් එක අගුළු අරින්න අවශ්‍ය නැත. Preview වැනි ඇතුළත් මෙවලම් එකවර එක් ගොනුවක් බැගින් වැඩ කරයි. UnKey Pro වැනි batch මෙවලමකට, හෝ Mac එකක කෙටි qpdf script එකකට, ඒ සියල්ල එකට කළ හැක. ඔබට තවමත් මුරපදය දැන සිටිය යුතුය.</p><h2>Batch unlocking උදව් වන්නේ ඇයි</h2><p>බොහෝ නිකුත් කරන්නන් සෑම ප්‍රකාශනයක්ම ඔබේ විස්තර මත පදනම් වූ එකම මුරපද ආකෘතියෙන් ආරක්ෂා කරයි. එබැවින් ඔක්තෝබර් මාසයේ මුරපදය සාමාන්‍යයෙන් ජනවාරි සිට සැප්තැම්බර් දක්වා ද විවෘත කරයි. එවිට batch මෙවලමක් කාලය ඉතිරි කරයි; සාමාන්‍යයෙන් බදු කාලයේදී, ණය අයදුම්පතකදී, හෝ ඔබ වසරක ප්‍රකාශන ගණකාධිකාරියෙකුට භාර දෙන විට.</p><h2>නොමිලේ විකල්පය: Mac හි Preview, එකින් එක</h2><p>Preview හට PDF කිහිපයක් එකවර විවෘත කළ හැක, නමුත් මුරපදය ඉවත් කිරීම එක් ගොනුවකට එක් වැඩකි. සෑම PDF එකකටම ඔබ මුරපදය ඇතුළත් කර, <strong>File &gt; Export</strong> තෝරා, <strong>Permissions</strong> යටතේ <strong>Require Password To Open Document</strong> ක්‍රියාවිරහිත බව පරීක්ෂා කර, සුරකින්න (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple: Password-protect a PDF in Preview</a>). ගොනු තුන හතරකට එය කමක් නැත. තිහකට එය වෙහෙසකර වන අතර, එකක් මග හැරීම පහසුය.</p><p>iPhone සහ iPad හි, නොමිලේ ක්‍රම (Preview හි Lock සැකසුම, හෝ Print-to-PDF උපක්‍රමය) ද එක් ගොනුවකට එක් වරකි.</p><h2>UnKey Pro: iPhone, iPad සහ Mac හි batch unlock</h2><ol><li>ප්‍රකාශන Files හෝ Finder හි එක් ෆෝල්ඩරයක තබන්න.</li><li><a href="/">UnKey</a> හි batch unlock භාවිතා කර ගොනු තෝරන්න. Mac හි ඒවා කවුළුවට ඇද දැමිය හැක.</li><li>මුරපදය ඇතුළත් කරන්න, නැතහොත් ඔබ කලින් Face ID හෝ Touch ID සමඟ සුරැකි මුරපදයක් UnKey ට භාවිතා කිරීමට ඉඩ දෙන්න.</li><li>UnKey සෑම ගොනුවකම අගුළු ඇරි පිටපතක් සුරකියි. ප්‍රතිඵල පරීක්ෂා කර, වෙනස් මුරපදයක් භාවිතා කරන ඕනෑම ගොනුවක් වෙන වෙනම අගුළු අරින්න.</li></ol><p>Batch unlock යනු එක්වරක් ගෙවන UnKey Pro හි කොටසකි (ඉන්දියාවේ ₹249, ඇමරිකාවේ $5.99). Pro මගින් ස්කෑන් කිරීම, අත්සන් කිරීම සහ පිරවීම, lock කිරීම, සම්පීඩනය සහ redaction ද එක් වන අතර, එක් මිලදී ගැනීමක් iPhone, iPad සහ Mac ආවරණය කරයි. තනි ගොනු අගුළු ඇරීම නොමිලේ. සියල්ල සිදු වන්නේ ඔබේ උපාංගයේ ය, කිසිවක් උඩුගත නොවේ.</p><h2>තාක්ෂණික පරිශීලකයන් සඳහා නොමිලේ විකල්පය: qpdf</h2><p>qpdf යනු නොමිලේ, open-source command-line මෙවලමකි. <code>--password</code> සහ <code>--decrypt</code> සමඟ එය ගොනුවක encrypt නොකළ පිටපතක් ලියයි (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf documentation</a>). Terminal හි, ෆෝල්ඩරයක් මත loop එකක් මෙසේ පෙනේ:</p><p><code>for f in *.pdf; do qpdf --decrypt --password="$PDFPASS" "$f" "unlocked-$f"; done</code></p><p>මුලින්ම <code>PDFPASS</code> සකසන්න, හැකි නම් එය ඔබේ shell history හි ඉතිරි නොකර. වෙනස් මුරපදයක් භාවිතා කරන ගොනු දෝෂයකින් අසාර්ථක වන අතර නිශ්ශබ්දව මග හැරෙන්නේ නැත. qpdf ඔබම ස්ථාපනය කරගත යුතුය, උදාහරණයක් ලෙස Homebrew සමඟ.</p><h2>ගොනු එකම මුරපදයක් බෙදා නොගන්නා විට</h2><ul><li><strong>වෙනස් ගිණුම්:</strong> එකම බැංකුවේ savings ගිණුමක් සහ credit card එකක් බොහෝ විට වෙනස් ආකෘති භාවිතා කරයි. ඒවා වෙන වෙනම ෆෝල්ඩර වලට වර්ග කරන්න.</li><li><strong>ආකෘති වෙනස් වීම:</strong> නිකුත් කරන්නන් සමහර විට ආකෘතිය වෙනස් කරයි. පරණ ප්‍රකාශනවලට පරණ එක අවශ්‍ය විය හැක.</li><li><strong>ඒකාබද්ධ හෝ ව්‍යාපාරික ගිණුම්:</strong> මුරපදය මූලික හිමියාගේ හෝ සමාගමේ විස්තර මත පදනම් විය හැක.</li></ul><h2>Batch එකක් අගුළු ඇරීමෙන් පසු</h2><ul><li>මුල් පිටපත් මකා දැමීමට පෙර පිටපත් දෙක තුනක් විවෘත කර පරීක්ෂා කරන්න.</li><li>"2026-04-statement-unlocked.pdf" වැනි පැහැදිලි නම් භාවිතා කරන්න.</li><li>අගුළු ඇරි ෆෝල්ඩරය පෞද්ගලිකව තබා ගන්න. වසරක ප්‍රකාශන ඔබේ මූල්‍ය තත්ත්වයේ සවිස්තරාත්මක චිත්‍රයකි.</li><li>ඒවා ගණකාධිකාරියෙකුට යවන්නේ නම්, ආරක්ෂිත මුල් පිටපත් යවා මුරපදය වෙන වෙනම බෙදා ගැනීම සලකා බලන්න.</li></ul>
+      <h2>ප්‍රශ්න</h2>
+      <div class="faq"><details><summary>Mac Preview හට PDF කිහිපයක් එකවර අගුළු ඇරිය හැකිද?</summary><p>නැත. Preview හි බොහෝ PDF විවෘත කළ හැකි නමුත්, ඒවායේ මුරපදය ඉවත් කිරීමට සෑම එකක්ම වෙන වෙනම export කළ යුතුය.</p></details><details><summary>සෑම ප්‍රකාශනයකටම වෙනස් මුරපදයක් ඇත්නම් batch unlocking ක්‍රියා කරයිද?</summary><p>Batch එකක් එකවර එක් මුරපදයකින් ක්‍රියා කරයි. ගොනු මුරපදය අනුව කාණ්ඩ කර, වෙනස් ඒවා වෙන වෙනම අගුළු අරින්න.</p></details><details><summary>UnKey හි batch unlock නොමිලේද?</summary><p>Batch unlock යනු එක්වරක් ගෙවන UnKey Pro හි කොටසකි. තනි ගොනු අගුළු ඇරීම නොමිලේ.</p></details><details><summary>Batch unlocking online කරනවාද?</summary><p>UnKey හෝ qpdf සමඟ නැත. දෙකම ක්‍රියා කරන්නේ ඔබේම උපාංගයේ ය, ගොනු උඩුගත නොවේ.</p></details></div>
+      <h2>මූලාශ්‍ර</h2>
+      <ul class="sources"><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li></ul>
+      <p class="muted small">ආකෘති වෙනස් විය හැක. මුරපදය ක්‍රියා නොකරන්නේ නම්, ලේඛනය සමඟ ආ ඊමේල් එක බලන්න, නැතහොත් නිකුත් කළ ආයතනය අමතන්න. මෙහි සඳහන් කිසිදු බැංකුවක්, සේවායෝජකයෙක් හෝ අධිකාරියක් සමඟ UnKey හට සම්බන්ධයක් නැත.</p>
+      <p class="muted small">ඉංග්‍රීසියෙන් පරිවර්තනය කළා. වෙනසක් ඇත්නම් ඉංග්‍රීසි පිටුව පදනම් වේ.</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">එක් වරක් <span class="hl" dir="auto">අගුළු හරින්න.</span></p>
+      <p>ඔබට දැනටමත් විවෘත කළ හැකි PDF වලින් UnKey මුරපදය ඉවත් කරයි, iPhone, iPad සහ Mac හි. නොබැඳිව ක්‍රියා කරයි, කිසිවක් උඩුගත නොවේ. මුරපදය එක් වරක් සුරකින්න, ඊළඟ මාසයේ ප්‍රකාශය Face ID මගින් විවෘත වේ.</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">UnKey ලබාගන්න <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="අදාළ මාර්ගෝපදේශ">
+      <div class="section-head"><span class="label">අදාළ මාර්ගෝපදේශ</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/si/compress-scanned-pdf-for-upload-limits.html"><strong>උඩුගත කිරීමේ ප්‍රමාණ සීමාවන් සඳහා ස්කෑන් කළ PDF එකක් කුඩා කරන්න</strong></a><span>ස්කෑන් කළ PDF විශාල වන්නේ සෑම පිටුවක්ම ඡායාරූපයක් නිසාය. Mac හි Preview හි Reduce File Size හෝ iPhone හි Preview හි export විකල්ප භාවිතා කර, අඩු හා සරල පිටු ස්කෑන් කර, උඩුගත කිරීමට පෙර මුරපදය ඉවත් කරන්න.</span></div></li><li><span class="num">→</span><div><a href="/guides/si/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: උපන් දින ආකෘති පැහැදිලි කිරීම</strong></a><span>DD යනු ඉලක්කම් දෙකකින් දිනය, MM ඉලක්කම් දෙකකින් මාසය, YY හෝ YYYY වසරයි; සැමවිටම ආරම්භක බිංදුවත් සමඟ: 1994 මාර්තු 7 යනු DDMM ලෙස 0703 ද, DDMMYYYY ලෙස 07031994 ද වේ.</span></div></li><li><span class="num">→</span><div><a href="/guides/si/forgot-pdf-password.html"><strong>PDF මුරපදය අමතක වුණාද? කළ හැකි දේ (2026)</strong></a><span>නොදන්නා PDF මුරපදයක් නීත්‍යානුකූලව ඉවත් කළ නොහැක; මුල් ඊමේල් එකේ ආකෘතිය සොයන්න, ලේඛනය නැවත බාගන්න, නැතහොත් එවූ අයගෙන් අසන්න.</span></div></li><li><span class="num">→</span><div><a href="/guides/si/how-bank-pdf-passwords-are-built.html"><strong>බැංකු ප්‍රකාශන PDF මුරපද සෑදෙන ආකාරය</strong></a><span>බොහෝ ප්‍රකාශන මුරපද සෑදෙන්නේ බැංකුව සතුව දැනටමත් ඇති විස්තර දෙකකිනි; උදාහරණයක් ලෙස ඔබේ නමේ මුල් අකුරු හතර සහ උපන් දිනය (DDMM), customer ID, හෝ කාඩ් හෝ ජංගම අංකයේ අවසාන ඉලක්කම්.</span></div></li><li><span class="num">→</span><div><a href="/guides/si/compress-scanned-pdf-for-upload-limits.html"><strong>උඩුගත කිරීමේ ප්‍රමාණ සීමාවන් සඳහා ස්කෑන් කළ PDF එකක් කුඩා කරන්න</strong></a><span>ස්කෑන් කළ PDF විශාල වන්නේ සෑම පිටුවක්ම ඡායාරූපයක් නිසාය. Mac හි Preview හි Reduce File Size හෝ iPhone හි Preview හි export විකල්ප භාවිතා කර, අඩු හා සරල පිටු ස්කෑන් කර, උඩුගත කිරීමට පෙර මුරපදය ඉවත් කරන්න.</span></div></li><li><span class="num">→</span><div><a href="/guides/si/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: උපන් දින ආකෘති පැහැදිලි කිරීම</strong></a><span>DD යනු ඉලක්කම් දෙකකින් දිනය, MM ඉලක්කම් දෙකකින් මාසය, YY හෝ YYYY වසරයි; සැමවිටම ආරම්භක බිංදුවත් සමඟ: 1994 මාර්තු 7 යනු DDMM ලෙස 0703 ද, DDMMYYYY ලෙස 07031994 ද වේ.</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/si/">මාර්ගෝපදේශ</a>
+      <a href="/support.html">සහාය</a>
+      <a href="/privacy.html">රහස්‍යතාව</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">නියම</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
