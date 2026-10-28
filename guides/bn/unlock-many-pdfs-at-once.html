@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>একসঙ্গে অনেক PDF আনলক করার উপায় (মাসিক স্টেটমেন্ট) · UnKey</title>
+  <meta name="description" content="এক বছরের স্টেটমেন্ট একবারে আনলক করুন: Mac-এর Preview একবারে একটি ফাইল করে, UnKey Pro একই পাসওয়ার্ডের PDF ব্যাচে আনলক করে, আর qpdf স্ক্রিপ্ট করা যায়।">
+  <link rel="canonical" href="https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="bn" href="https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="fr" href="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="te" href="https://unkeypdf.app/guides/te/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="একসঙ্গে অনেক PDF আনলক করার উপায় (মাসিক স্টেটমেন্ট) · UnKey">
+  <meta property="og:description" content="এক বছরের স্টেটমেন্ট একবারে আনলক করুন: Mac-এর Preview একবারে একটি ফাইল করে, UnKey Pro একই পাসওয়ার্ডের PDF ব্যাচে আনলক করে, আর qpdf স্ক্রিপ্ট করা যায়।">
+  <meta property="og:url" content="https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "একসঙ্গে অনেক PDF আনলক করার উপায় (মাসিক স্টেটমেন্ট)", "description": "এক বছরের স্টেটমেন্ট একবারে আনলক করুন: Mac-এর Preview একবারে একটি ফাইল করে, UnKey Pro একই পাসওয়ার্ডের PDF ব্যাচে আনলক করে, আর qpdf স্ক্রিপ্ট করা যায়।", "inLanguage": "bn", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "bn", "mainEntity": [{"@type": "Question", "name": "Mac Preview কি একসঙ্গে কয়েকটি PDF আনলক করতে পারে?", "acceptedAnswer": {"@type": "Answer", "text": "না। Preview-তে অনেক PDF খোলা যায়, কিন্তু পাসওয়ার্ড সরাতে প্রতিটি আলাদা করে এক্সপোর্ট করতে হয়।"}}, {"@type": "Question", "name": "প্রতিটি স্টেটমেন্টের পাসওয়ার্ড আলাদা হলে কি ব্যাচ আনলক চলে?", "acceptedAnswer": {"@type": "Answer", "text": "ব্যাচ একবারে একটি পাসওয়ার্ডে কাজ করে। ফাইলগুলো পাসওয়ার্ড অনুযায়ী ভাগ করুন, আর আলাদাগুলো আলাদা করে আনলক করুন।"}}, {"@type": "Question", "name": "UnKey-র ব্যাচ আনলক কি বিনামূল্যে?", "acceptedAnswer": {"@type": "Answer", "text": "ব্যাচ আনলক UnKey Pro-র অংশ, যা একবারের কেনা। একটি ফাইল আনলক করা বিনামূল্যে।"}}, {"@type": "Question", "name": "ব্যাচ আনলক কি অনলাইনে হয়?", "acceptedAnswer": {"@type": "Answer", "text": "UnKey বা qpdf দিয়ে নয়। দুটিই আপনার নিজের ডিভাইসে চলে, ফাইল আপলোড হয় না।"}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "গাইড", "item": "https://unkeypdf.app/guides/bn/"}, {"@type": "ListItem", "position": 2, "name": "একসঙ্গে অনেক PDF আনলক করার উপায় (মাসিক স্টেটমেন্ট)", "item": "https://unkeypdf.app/guides/bn/unlock-many-pdfs-at-once.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/bn/">গাইড</a>
+      <a class="label" href="/#tools">টুলস</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">সাপোর্ট</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">অ্যাপ নিন <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/bn/">গাইড</a> · কীভাবে করবেন</p>
+    <h1 class="poster">একসঙ্গে অনেক PDF আনলক করার উপায় (মাসিক স্টেটমেন্ট)</h1>
+    <p class="meta muted">অক্টোবর ২০২৬-এ আপডেট করা হয়েছে</p>
+    <p class="label langs">এই ভাষায় পড়ুন: <a href="/guides/unlock-many-pdfs-at-once.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/unlock-many-pdfs-at-once.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/bn/unlock-many-pdfs-at-once.html" hreflang="bn" lang="bn" aria-current="page">বাংলা</a> · <a href="/guides/de/unlock-many-pdfs-at-once.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/unlock-many-pdfs-at-once.html" hreflang="es" lang="es">Español</a> · <a href="/guides/fr/unlock-many-pdfs-at-once.html" hreflang="fr" lang="fr">Français</a> · <a href="/guides/hi/unlock-many-pdfs-at-once.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/unlock-many-pdfs-at-once.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/pt/unlock-many-pdfs-at-once.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/ta/unlock-many-pdfs-at-once.html" hreflang="ta" lang="ta">தமிழ்</a> · <a href="/guides/te/unlock-many-pdfs-at-once.html" hreflang="te" lang="te">తెలుగు</a></p>
+    <div class="prose">
+      <p class="callout">Preview একবারে একটি PDF সামলায়; একই পাসওয়ার্ডের অনেক স্টেটমেন্ট আনলক করতে UnKey Pro-র মতো ব্যাচ টুল বা qpdf স্ক্রিপ্ট ব্যবহার করুন।</p>
+      
+      <p>একই ব্যাংকের বারো মাসের মতো এক গাদা স্টেটমেন্ট থাকলে, যেগুলোর পাসওয়ার্ড একই, একটি একটি করে আনলক করতে হবে না। Preview-র মতো বিল্ট-ইন টুল একবারে একটি ফাইল সামলায়। UnKey Pro-র মতো ব্যাচ টুল, বা Mac-এ ছোট একটি qpdf স্ক্রিপ্ট, সবগুলো একসঙ্গে করতে পারে। পাসওয়ার্ড তবুও আপনার জানা থাকতে হবে।</p><h2>ব্যাচ আনলক কেন কাজের</h2><p>বেশিরভাগ ইস্যুকারী প্রতিটি স্টেটমেন্ট আপনার তথ্যভিত্তিক একই পাসওয়ার্ড ফরম্যাটে সুরক্ষিত করে। তাই অক্টোবরের পাসওয়ার্ড সাধারণত জানুয়ারি থেকে সেপ্টেম্বরও খোলে। ব্যাচ টুল তখনই সময় বাঁচায়, সাধারণত ট্যাক্সের সময়, লোনের আবেদনে, বা হিসাবরক্ষককে এক বছরের স্টেটমেন্ট দেওয়ার সময়।</p><h2>বিনামূল্যের অপশন: Mac-এর Preview, একটি একটি করে</h2><p>Preview একসঙ্গে কয়েকটি PDF খুলতে পারে, কিন্তু পাসওয়ার্ড সরানো ফাইল ধরে ধরে করতে হয়। প্রতিটি PDF-এ পাসওয়ার্ড দিন, <strong>File &gt; Export</strong> বাছুন, <strong>Permissions</strong>-এর নিচে <strong>Require Password To Open Document</strong> বন্ধ আছে কি না দেখুন, এবং সেভ করুন (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple: Password-protect a PDF in Preview</a>)। তিন-চারটি ফাইলের জন্য এটা ঠিক আছে। ত্রিশটির জন্য বিরক্তিকর, আর একটি বাদ পড়ে যাওয়াও সহজ।</p><p>iPhone ও iPad-এও বিনামূল্যের পদ্ধতি (Preview-র Lock সেটিং, বা Print-to-PDF কৌশল) একটি একটি করে।</p><h2>UnKey Pro: iPhone, iPad ও Mac-এ ব্যাচ আনলক</h2><ol><li>স্টেটমেন্টগুলো Files বা Finder-এর একটি ফোল্ডারে রাখুন।</li><li><a href="/">UnKey</a>-তে ব্যাচ আনলক ব্যবহার করে ফাইলগুলো বাছুন। Mac-এ উইন্ডোতে টেনে আনা যায়।</li><li>পাসওয়ার্ড দিন, অথবা আগে সেভ করা পাসওয়ার্ড Face ID বা Touch ID দিয়ে UnKey-কে ব্যবহার করতে দিন।</li><li>UnKey প্রতিটি ফাইলের আনলক করা কপি সেভ করে। ফলাফল দেখে নিন, আর অন্য পাসওয়ার্ডের কোনো ফাইল আলাদা করে আনলক করুন।</li></ol><p>ব্যাচ আনলক UnKey Pro-র অংশ, যা একবারের কেনা (ভারতে ₹249, US-এ $5.99)। Pro-তে আরও যোগ হয় স্ক্যান, সই ও ফর্ম পূরণ, লক, কমপ্রেস ও রিড্যাক্ট, আর একটি কেনায় iPhone, iPad ও Mac তিনটিই চলে। একটি ফাইল আনলক করা বিনামূল্যে। সবকিছু আপনার ডিভাইসেই হয়, কিছু আপলোড হয় না।</p><h2>প্রযুক্তিগতদের জন্য বিনামূল্যের অপশন: qpdf</h2><p>qpdf একটি বিনামূল্যের ওপেন-সোর্স কমান্ড-লাইন টুল। <code>--password</code> ও <code>--decrypt</code> দিয়ে এটি ফাইলের এনক্রিপশনহীন কপি লেখে (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf documentation</a>)। Terminal-এ একটি ফোল্ডারের ওপর লুপ দেখতে এমন:</p><p><code>for f in *.pdf; do qpdf --decrypt --password="$PDFPASS" "$f" "unlocked-$f"; done</code></p><p>আগে <code>PDFPASS</code> সেট করুন, সম্ভব হলে শেল হিস্ট্রিতে না রেখে। অন্য পাসওয়ার্ডের ফাইলে এরর আসবে, চুপচাপ বাদ যাবে না। qpdf নিজে ইনস্টল করতে হয়, যেমন Homebrew দিয়ে।</p><h2>ফাইলগুলোর পাসওয়ার্ড এক না হলে</h2><ul><li><strong>আলাদা অ্যাকাউন্ট:</strong> একই ব্যাংকের সেভিংস অ্যাকাউন্ট ও ক্রেডিট কার্ডের ফরম্যাট প্রায়ই আলাদা। এগুলো আলাদা ফোল্ডারে সাজান।</li><li><strong>ফরম্যাট বদল:</strong> ইস্যুকারী মাঝে মাঝে ফরম্যাট বদলায়। পুরনো স্টেটমেন্টে পুরনো ফরম্যাট লাগতে পারে।</li><li><strong>যৌথ বা ব্যবসায়িক অ্যাকাউন্ট:</strong> পাসওয়ার্ড প্রাথমিক ধারকের বা কোম্পানির তথ্যভিত্তিক হতে পারে।</li></ul><h2>ব্যাচ আনলকের পর</h2><ul><li>আসল কিছু মোছার আগে দুটি-তিনটি কপি খুলে দেখে নিন।</li><li>স্পষ্ট নাম দিন, যেমন "2026-04-statement-unlocked.pdf"।</li><li>আনলক করা ফোল্ডার ব্যক্তিগত রাখুন। এক বছরের স্টেটমেন্ট আপনার আর্থিক অবস্থার বিস্তারিত ছবি।</li><li>হিসাবরক্ষককে পাঠালে সুরক্ষিত আসল ফাইল পাঠিয়ে পাসওয়ার্ড আলাদা জানানোর কথা ভাবুন।</li></ul>
+      <h2>প্রশ্ন</h2>
+      <div class="faq"><details><summary>Mac Preview কি একসঙ্গে কয়েকটি PDF আনলক করতে পারে?</summary><p>না। Preview-তে অনেক PDF খোলা যায়, কিন্তু পাসওয়ার্ড সরাতে প্রতিটি আলাদা করে এক্সপোর্ট করতে হয়।</p></details><details><summary>প্রতিটি স্টেটমেন্টের পাসওয়ার্ড আলাদা হলে কি ব্যাচ আনলক চলে?</summary><p>ব্যাচ একবারে একটি পাসওয়ার্ডে কাজ করে। ফাইলগুলো পাসওয়ার্ড অনুযায়ী ভাগ করুন, আর আলাদাগুলো আলাদা করে আনলক করুন।</p></details><details><summary>UnKey-র ব্যাচ আনলক কি বিনামূল্যে?</summary><p>ব্যাচ আনলক UnKey Pro-র অংশ, যা একবারের কেনা। একটি ফাইল আনলক করা বিনামূল্যে।</p></details><details><summary>ব্যাচ আনলক কি অনলাইনে হয়?</summary><p>UnKey বা qpdf দিয়ে নয়। দুটিই আপনার নিজের ডিভাইসে চলে, ফাইল আপলোড হয় না।</p></details></div>
+      <h2>সূত্রসমূহ</h2>
+      <ul class="sources"><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li></ul>
+      <p class="muted small">ফরম্যাট বদলাতে পারে। পাসওয়ার্ড কাজ না করলে ডকুমেন্টের সঙ্গে আসা ইমেইল দেখুন অথবা প্রদানকারী প্রতিষ্ঠানের সঙ্গে যোগাযোগ করুন। এখানে উল্লেখ করা কোনো ব্যাংক, নিয়োগকর্তা বা কর্তৃপক্ষের সঙ্গে UnKey-এর কোনো সম্পর্ক নেই।</p>
+      <p class="muted small">ইংরেজি থেকে অনূদিত। কোনো পার্থক্য থাকলে ইংরেজি পেজই চূড়ান্ত।</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">একবারেই <span class="hl" dir="auto">আনলক করুন।</span></p>
+      <p>আপনি যে PDF আগে থেকেই খুলতে পারেন, UnKey তা থেকে পাসওয়ার্ড সরিয়ে দেয়, iPhone, iPad ও Mac-এ। অফলাইনে কাজ করে, কিছু আপলোড হয় না। পাসওয়ার্ড একবার সেভ করুন, আগামী মাসের স্টেটমেন্ট Face ID-ই খুলে দেবে।</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">UnKey নিন <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="সংশ্লিষ্ট গাইড">
+      <div class="section-head"><span class="label">সংশ্লিষ্ট গাইড</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/bn/compress-scanned-pdf-for-upload-limits.html"><strong>আপলোডের সাইজ-সীমার জন্য স্ক্যান করা PDF ছোট করুন</strong></a><span>স্ক্যান করা PDF বড় হয় কারণ প্রতিটি পাতা আসলে একটি ছবি। Mac-এ Preview-র Reduce File Size বা iPhone-এ Preview-র এক্সপোর্ট অপশনে ছোট করুন, কম ও সহজ পাতা স্ক্যান করুন, আর আপলোডের আগে পাসওয়ার্ড সরিয়ে নিন।</span></div></li><li><span class="num">→</span><div><a href="/guides/bn/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: জন্মতারিখের ফরম্যাট ব্যাখ্যা</strong></a><span>DD মানে দুই অঙ্কের দিন, MM দুই অঙ্কের মাস, আর YY বা YYYY বছর, সবসময় শুরুর শূন্যসহ: 7 মার্চ 1994 হলো DDMM-এ 0703 এবং DDMMYYYY-তে 07031994।</span></div></li><li><span class="num">→</span><div><a href="/guides/bn/forgot-pdf-password.html"><strong>PDF পাসওয়ার্ড ভুলে গেছেন? কী করতে পারেন (2026)</strong></a><span>অজানা PDF পাসওয়ার্ড বৈধভাবে সরানো যায় না; আসল ইমেইলে ফরম্যাট খুঁজুন, ডকুমেন্ট আবার ডাউনলোড করুন, বা প্রেরকের কাছে জিজ্ঞাসা করুন।</span></div></li><li><span class="num">→</span><div><a href="/guides/bn/how-bank-pdf-passwords-are-built.html"><strong>ব্যাংক স্টেটমেন্টের PDF পাসওয়ার্ড কীভাবে তৈরি হয়</strong></a><span>বেশিরভাগ স্টেটমেন্টের পাসওয়ার্ড ব্যাংকের কাছে থাকা দুটি তথ্য জুড়ে তৈরি, যেমন নামের প্রথম চারটি অক্ষর আর জন্মতারিখ (DDMM), Customer ID, বা কার্ড ও মোবাইল নম্বরের শেষ কয়েকটি অঙ্ক।</span></div></li><li><span class="num">→</span><div><a href="/guides/bn/compress-scanned-pdf-for-upload-limits.html"><strong>আপলোডের সাইজ-সীমার জন্য স্ক্যান করা PDF ছোট করুন</strong></a><span>স্ক্যান করা PDF বড় হয় কারণ প্রতিটি পাতা আসলে একটি ছবি। Mac-এ Preview-র Reduce File Size বা iPhone-এ Preview-র এক্সপোর্ট অপশনে ছোট করুন, কম ও সহজ পাতা স্ক্যান করুন, আর আপলোডের আগে পাসওয়ার্ড সরিয়ে নিন।</span></div></li><li><span class="num">→</span><div><a href="/guides/bn/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: জন্মতারিখের ফরম্যাট ব্যাখ্যা</strong></a><span>DD মানে দুই অঙ্কের দিন, MM দুই অঙ্কের মাস, আর YY বা YYYY বছর, সবসময় শুরুর শূন্যসহ: 7 মার্চ 1994 হলো DDMM-এ 0703 এবং DDMMYYYY-তে 07031994।</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/bn/">গাইড</a>
+      <a href="/support.html">সাপোর্ট</a>
+      <a href="/privacy.html">গোপনীয়তা</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">শর্তাবলি</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
