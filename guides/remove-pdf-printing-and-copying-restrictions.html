@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Printing and Copying Restrictions Explained · UnKey</title>
+  <meta name="description" content="A PDF can have an open password and a separate owner (permissions) password that blocks printing or copying. Here&#x27;s the difference and how to change them.">
+  <link rel="canonical" href="https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PDF Printing and Copying Restrictions Explained · UnKey">
+  <meta property="og:description" content="A PDF can have an open password and a separate owner (permissions) password that blocks printing or copying. Here&#x27;s the difference and how to change them.">
+  <meta property="og:url" content="https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=4">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PDF Printing and Copying Restrictions Explained", "description": "A PDF can have an open password and a separate owner (permissions) password that blocks printing or copying. Here's the difference and how to change them.", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a PDF owner password?", "acceptedAnswer": {"@type": "Answer", "text": "It's a password that controls permissions such as printing, copying and editing. The file can be opened without it, but restricted actions are blocked in readers that respect the settings."}}, {"@type": "Question", "name": "Why can I open a PDF but not print it?", "acceptedAnswer": {"@type": "Answer", "text": "The file has an owner (permissions) password that disallows printing. Enter the owner password in Preview under File > Edit Permissions, or ask the sender for an unrestricted copy."}}, {"@type": "Question", "name": "Do bank statements have printing restrictions?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. They typically use only an open password, so once the file is open you can print it."}}, {"@type": "Question", "name": "Is it legal to remove PDF copy restrictions?", "acceptedAnswer": {"@type": "Answer", "text": "Changing permissions on your own file, with your own owner password, is fine. Bypassing restrictions on someone else's document may break copyright or contract terms, so ask the owner."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Guides", "item": "https://unkeypdf.app/guides/"}, {"@type": "ListItem", "position": 2, "name": "PDF Printing and Copying Restrictions Explained", "item": "https://unkeypdf.app/guides/remove-pdf-printing-and-copying-restrictions.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label" href="/guides/">Guides</a>
+      <a class="label" href="/#tools">Tools</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">Support</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">Get the app <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/">Guides</a> · How-to</p>
+    <h1 class="poster">PDF Printing and Copying Restrictions Explained</h1>
+    <p class="meta muted">Updated October 2026</p>
+    <div class="prose">
+      <p class="callout">An open password stops anyone reading the PDF; an owner (permissions) password only restricts actions like printing, copying and editing.</p>
+      
+      <p>PDFs can have two different passwords. An <strong>open password</strong> (also called a user password) is needed to view the file at all. An <strong>owner password</strong> (also called a permissions password) lets you open the file but restricts things like printing, copying text or editing. To lift the restrictions properly, you need the owner password.</p><h2>The two passwords in plain terms</h2><table><thead><tr><th></th><th>Open (user) password</th><th>Owner (permissions) password</th></tr></thead><tbody><tr><td>What you see</td><td>A password prompt before anything shows</td><td>The file opens, but Print or Copy is greyed out</td></tr><tr><td>What it protects</td><td>The whole contents, which are encrypted</td><td>Actions such as printing, copying, editing and commenting</td></tr><tr><td>Typical use</td><td>Bank statements, tax documents</td><td>Published reports, forms, contracts</td></tr></tbody></table><p>Adobe describes the split the same way. A Document Open password is needed to open the PDF, and a permissions password restricts features such as printing, editing and copying (<a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe: Password security overview</a>). qpdf's documentation adds an important detail: readers "apply security restrictions to files opened with the user password" and "allow security restrictions to be changed or overridden when files are opened with the owner password" (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf</a>).</p><h2>How restrictions are enforced</h2><p>Restrictions depend on the PDF reader choosing to honour them. Adobe notes that its own products enforce them, but if third-party products don't support these settings, recipients may be able to bypass some or all of the restrictions (<a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe</a>). So a permissions password is a polite "please don't" rather than a lock. It isn't a reason to ignore the author's wishes, though. If someone restricted copying, there's usually a reason, such as copyright or a contract.</p><h2>Changing restrictions when you have the owner password</h2><p><strong>On Mac (Preview):</strong> open the PDF, choose <strong>File &gt; Edit Permissions</strong>, and enter the owner password. You can then select the actions you want to allow without a password and click <strong>Apply</strong> (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple: Password-protect a PDF in Preview on Mac</a>). The same Permissions panel appears under <strong>File &gt; Export</strong> if you want a fresh copy.</p><p><strong>In Adobe Acrobat:</strong> Adobe's instructions for removing a permissions password ask you to type it into the Enter Password box (<a href="https://www.adobe.com/acrobat/how-to/unlock-pdf.html">Adobe: How to remove a PDF password</a>).</p><p><strong>On the command line:</strong> qpdf with <code>--password=OWNERPASSWORD --decrypt</code> writes a copy with no encryption. Its documentation notes this option isn't meant for getting around restrictions that producers place on files (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf</a>).</p><h2>Your own documents with both passwords</h2><p>Bank statements normally use only an open password. Once you've opened one, you can usually print and copy freely. If you created a PDF yourself in Preview or Acrobat and set both passwords, use the owner password to change permissions or to export an unrestricted copy.</p><p>To remove an open password from your own files, such as monthly statements, you can use Preview on a Mac or <a href="/">UnKey</a> on iPhone, iPad or Mac. UnKey works offline and only works with passwords you already know.</p><h2>When you don't have the owner password</h2><ul><li>Ask the author or sender for an unrestricted copy, or for permission to print or copy.</li><li>For a form you need to fill in, check whether filling is already allowed. Many restricted PDFs still permit form filling.</li><li>For a work or legal document, assume the restriction is intentional.</li></ul>
+      <h2>Questions</h2>
+      <div class="faq"><details><summary>What is a PDF owner password?</summary><p>It&#x27;s a password that controls permissions such as printing, copying and editing. The file can be opened without it, but restricted actions are blocked in readers that respect the settings.</p></details><details><summary>Why can I open a PDF but not print it?</summary><p>The file has an owner (permissions) password that disallows printing. Enter the owner password in Preview under File &gt; Edit Permissions, or ask the sender for an unrestricted copy.</p></details><details><summary>Do bank statements have printing restrictions?</summary><p>Usually not. They typically use only an open password, so once the file is open you can print it.</p></details><details><summary>Is it legal to remove PDF copy restrictions?</summary><p>Changing permissions on your own file, with your own owner password, is fine. Bypassing restrictions on someone else&#x27;s document may break copyright or contract terms, so ask the owner.</p></details></div>
+      <h2>Sources</h2>
+      <ul class="sources"><li><a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/protect-with-passwords/password-security-overview.html">Adobe – Password security overview in Acrobat</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://www.adobe.com/acrobat/how-to/unlock-pdf.html">Adobe – How to remove a PDF password</a></li></ul>
+      <p class="muted small">Formats can change. If a password doesn't work, check the email the document came with or contact the issuer. UnKey isn't affiliated with any bank or authority named here.</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">Unlock it <span class="hl">once.</span></p>
+      <p>UnKey removes the password from PDFs you can already open, on iPhone, iPad and Mac. Offline, nothing uploaded. Save the password once and Face ID opens next month's statement.</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">Get UnKey <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="Related guides">
+      <div class="section-head"><span class="label">Related guides</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/forgot-pdf-password.html"><strong>Forgot Your PDF Password? What You Can Do (2026)</strong></a><span>An unknown PDF password can&#x27;t be legitimately removed; find the format in the original email, re-download the document, or ask the sender.</span></div></li><li><span class="num">→</span><div><a href="/guides/how-to-remove-password-from-pdf-on-ipad.html"><strong>How to Remove a Password from a PDF on iPad (2026)</strong></a><span>Open the PDF with its password, then save an unlocked copy with Preview, the Print-to-PDF workaround, or an offline app such as UnKey.</span></div></li><li><span class="num">→</span><div><a href="/guides/how-to-remove-password-from-pdf-on-iphone.html"><strong>How to Remove a Password from a PDF on iPhone (2026)</strong></a><span>Open the PDF with its password, then save a copy without the password using Preview, the Print-to-PDF workaround, or an offline app such as UnKey.</span></div></li><li><span class="num">→</span><div><a href="/guides/how-to-remove-password-from-pdf-on-mac.html"><strong>How to Remove a Password from a PDF on Mac (2026)</strong></a><span>Open the PDF in Preview with its password, choose File &gt; Export, make sure no open password is set, and save a new copy.</span></div></li><li><span class="num">→</span><div><a href="/guides/forgot-pdf-password.html"><strong>Forgot Your PDF Password? What You Can Do (2026)</strong></a><span>An unknown PDF password can&#x27;t be legitimately removed; find the format in the original email, re-download the document, or ask the sender.</span></div></li><li><span class="num">→</span><div><a href="/guides/how-to-remove-password-from-pdf-on-ipad.html"><strong>How to Remove a Password from a PDF on iPad (2026)</strong></a><span>Open the PDF with its password, then save an unlocked copy with Preview, the Print-to-PDF workaround, or an offline app such as UnKey.</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/">Guides</a>
+      <a href="/support.html">Support</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
