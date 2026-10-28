@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comment déverrouiller de nombreux PDF à la fois (relevés mensuels) · UnKey</title>
+  <meta name="description" content="Déverrouillez un an de relevés d’un coup : Aperçu sur Mac traite un fichier à la fois, UnKey Pro déverrouille par lots les PDF au même mot de passe, et qpdf peut être scripté.">
+  <link rel="canonical" href="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="fr" href="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/unlock-many-pdfs-at-once.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/unlock-many-pdfs-at-once.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Comment déverrouiller de nombreux PDF à la fois (relevés mensuels) · UnKey">
+  <meta property="og:description" content="Déverrouillez un an de relevés d’un coup : Aperçu sur Mac traite un fichier à la fois, UnKey Pro déverrouille par lots les PDF au même mot de passe, et qpdf peut être scripté.">
+  <meta property="og:url" content="https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Comment déverrouiller de nombreux PDF à la fois (relevés mensuels)", "description": "Déverrouillez un an de relevés d’un coup : Aperçu sur Mac traite un fichier à la fois, UnKey Pro déverrouille par lots les PDF au même mot de passe, et qpdf peut être scripté.", "inLanguage": "fr", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "fr", "mainEntity": [{"@type": "Question", "name": "Aperçu sur Mac peut-il déverrouiller plusieurs PDF à la fois ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Vous pouvez ouvrir plusieurs PDF dans Aperçu, mais chacun doit être exporté séparément pour en retirer le mot de passe."}}, {"@type": "Question", "name": "Le déverrouillage par lots fonctionne-t-il si chaque relevé a un mot de passe différent ?", "acceptedAnswer": {"@type": "Answer", "text": "Un lot fonctionne avec un seul mot de passe à la fois. Regroupez les fichiers par mot de passe et déverrouillez séparément les cas particuliers."}}, {"@type": "Question", "name": "Le déverrouillage par lots d’UnKey est-il gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Il fait partie d’UnKey Pro, un achat unique. Déverrouiller des fichiers un par un est gratuit."}}, {"@type": "Question", "name": "Le déverrouillage par lots se fait-il en ligne ?", "acceptedAnswer": {"@type": "Answer", "text": "Avec UnKey ou qpdf, non. Les deux fonctionnent sur votre propre appareil, et les fichiers ne sont pas envoyés."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Guides", "item": "https://unkeypdf.app/guides/fr/"}, {"@type": "ListItem", "position": 2, "name": "Comment déverrouiller de nombreux PDF à la fois (relevés mensuels)", "item": "https://unkeypdf.app/guides/fr/unlock-many-pdfs-at-once.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/fr/">Guides</a>
+      <a class="label" href="/#tools">Outils</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">Assistance</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">Obtenir l’app <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/fr/">Guides</a> · Mode d’emploi</p>
+    <h1 class="poster">Comment déverrouiller de nombreux PDF à la fois (relevés mensuels)</h1>
+    <p class="meta muted">Mis à jour en octobre 2026</p>
+    <p class="label langs">Lire en: <a href="/guides/unlock-many-pdfs-at-once.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/unlock-many-pdfs-at-once.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/de/unlock-many-pdfs-at-once.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/unlock-many-pdfs-at-once.html" hreflang="es" lang="es">Español</a> · <a href="/guides/fr/unlock-many-pdfs-at-once.html" hreflang="fr" lang="fr" aria-current="page">Français</a> · <a href="/guides/hi/unlock-many-pdfs-at-once.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/unlock-many-pdfs-at-once.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/pt/unlock-many-pdfs-at-once.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/ta/unlock-many-pdfs-at-once.html" hreflang="ta" lang="ta">தமிழ்</a></p>
+    <div class="prose">
+      <p class="callout">Aperçu traite un PDF à la fois ; pour déverrouiller beaucoup de relevés partageant un mot de passe, utilisez un outil par lots comme UnKey Pro ou un script qpdf.</p>
+      
+      <p>Si vous avez une pile de relevés, disons douze mois de la même banque, qui utilisent tous le même mot de passe, inutile de les déverrouiller un par un. Les outils intégrés comme Aperçu travaillent fichier par fichier. Un outil par lots comme UnKey Pro, ou un court script qpdf sur Mac, peut tous les traiter ensemble. Vous devez quand même connaître le mot de passe.</p><h2>Pourquoi le déverrouillage par lots aide</h2><p>La plupart des émetteurs protègent chaque relevé avec le même format de mot de passe, fondé sur vos informations. Le mot de passe d’octobre ouvre donc généralement aussi les relevés de janvier à septembre. C’est là qu’un outil par lots fait gagner du temps, typiquement au moment des impôts, pour une demande de prêt, ou quand vous remettez un an de relevés à un comptable.</p><h2>Option gratuite : Aperçu sur Mac, un par un</h2><p>Aperçu peut ouvrir plusieurs PDF à la fois, mais retirer le mot de passe se fait fichier par fichier. Pour chaque PDF, vous saisissez le mot de passe, choisissez <strong>Fichier &gt; Exporter</strong>, vérifiez que <strong>Exiger un mot de passe pour ouvrir le document</strong> est désactivé sous <strong>Permissions</strong>, puis enregistrez (<a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple : Protéger un PDF par mot de passe dans Aperçu</a>). Pour trois ou quatre fichiers, cela convient. Pour trente, c’est fastidieux et on peut facilement en oublier un.</p><p>Sur iPhone et iPad, les méthodes gratuites (réglage Verrouiller d’Aperçu ou astuce d’impression en PDF) fonctionnent aussi fichier par fichier.</p><h2>UnKey Pro : déverrouillage par lots sur iPhone, iPad et Mac</h2><ol><li>Mettez les relevés dans un même dossier dans Fichiers ou le Finder.</li><li>Dans <a href="/">UnKey</a>, utilisez le déverrouillage par lots et sélectionnez les fichiers. Sur Mac, vous pouvez les faire glisser sur la fenêtre.</li><li>Saisissez le mot de passe, ou laissez UnKey utiliser celui que vous avez enregistré avec Face ID ou Touch ID.</li><li>UnKey enregistre une copie déverrouillée de chaque fichier. Vérifiez les résultats, et déverrouillez séparément tout fichier qui utilise un autre mot de passe.</li></ol><p>Le déverrouillage par lots fait partie d’UnKey Pro, un achat unique (₹249 en Inde, 5,99 $ aux États-Unis). Pro ajoute aussi la numérisation, la signature et le remplissage, le verrouillage, la compression et la rédaction (masquage), et un seul achat couvre iPhone, iPad et Mac. Déverrouiller des fichiers un par un est gratuit. Tout se passe sur votre appareil, rien n’est envoyé.</p><h2>Option gratuite pour utilisateurs avancés : qpdf</h2><p>qpdf est un outil libre et gratuit en ligne de commande. Avec <code>--password</code> et <code>--decrypt</code>, il écrit une copie non chiffrée d’un fichier (<a href="https://qpdf.readthedocs.io/en/stable/cli.html">documentation de qpdf</a>). Dans le Terminal, une boucle sur un dossier ressemble à ceci :</p><p><code>for f in *.pdf; do qpdf --decrypt --password="$PDFPASS" "$f" "unlocked-$f"; done</code></p><p>Définissez d’abord <code>PDFPASS</code>, idéalement sans le laisser dans l’historique de votre shell. Les fichiers qui utilisent un autre mot de passe échoueront avec une erreur et ne seront pas ignorés en silence. Vous installez qpdf vous-même, par exemple avec Homebrew.</p><h2>Quand les fichiers ne partagent pas le même mot de passe</h2><ul><li><strong>Comptes différents :</strong> un compte d’épargne et une carte de crédit de la même banque utilisent souvent des formats différents. Triez-les dans des dossiers séparés.</li><li><strong>Changements de format :</strong> les émetteurs changent parfois de format. Les anciens relevés peuvent nécessiter l’ancien.</li><li><strong>Comptes joints ou professionnels :</strong> le mot de passe peut reposer sur les informations du titulaire principal ou de la société.</li></ul><h2>Après le déverrouillage d’un lot</h2><ul><li>Ouvrez deux ou trois des copies pour les vérifier avant de supprimer un original.</li><li>Utilisez des noms clairs, par exemple « 2026-04-statement-unlocked.pdf ».</li><li>Gardez le dossier déverrouillé privé. Un an de relevés donne une image détaillée de vos finances.</li><li>Si vous les envoyez à un comptable, pensez à envoyer les originaux protégés et à communiquer le mot de passe séparément.</li></ul>
+      <h2>Questions</h2>
+      <div class="faq"><details><summary>Aperçu sur Mac peut-il déverrouiller plusieurs PDF à la fois ?</summary><p>Non. Vous pouvez ouvrir plusieurs PDF dans Aperçu, mais chacun doit être exporté séparément pour en retirer le mot de passe.</p></details><details><summary>Le déverrouillage par lots fonctionne-t-il si chaque relevé a un mot de passe différent ?</summary><p>Un lot fonctionne avec un seul mot de passe à la fois. Regroupez les fichiers par mot de passe et déverrouillez séparément les cas particuliers.</p></details><details><summary>Le déverrouillage par lots d’UnKey est-il gratuit ?</summary><p>Il fait partie d’UnKey Pro, un achat unique. Déverrouiller des fichiers un par un est gratuit.</p></details><details><summary>Le déverrouillage par lots se fait-il en ligne ?</summary><p>Avec UnKey ou qpdf, non. Les deux fonctionnent sur votre propre appareil, et les fichiers ne sont pas envoyés.</p></details></div>
+      <h2>Sources</h2>
+      <ul class="sources"><li><a href="https://support.apple.com/guide/preview/password-protect-a-pdf-prvw587dd90f/mac">Apple – Password-protect a PDF in Preview on Mac</a></li><li><a href="https://qpdf.readthedocs.io/en/stable/cli.html">qpdf – Command-line options</a></li></ul>
+      <p class="muted small">Les formats peuvent changer. Si un mot de passe ne fonctionne pas, vérifiez l’e-mail accompagnant le document ou contactez l’émetteur. UnKey n’est affilié à aucune banque, aucun employeur ni aucune autorité cités ici.</p>
+      <p class="muted small">Traduit de l’anglais. En cas de différence, la page anglaise fait foi.</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">Déverrouillez-le <span class="hl" dir="auto">une fois.</span></p>
+      <p>UnKey retire le mot de passe des PDF que vous pouvez déjà ouvrir, sur iPhone, iPad et Mac. Hors connexion, rien n’est envoyé. Enregistrez le mot de passe une fois, et Face ID ouvrira le relevé du mois prochain.</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">Obtenir UnKey <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="Guides associés">
+      <div class="section-head"><span class="label">Guides associés</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/fr/compress-scanned-pdf-for-upload-limits.html"><strong>Compresser un PDF scanné pour respecter la limite de taille</strong></a><span>Un PDF scanné est lourd car chaque page est une photo ; réduisez-le avec Aperçu (Réduire la taille du fichier sur Mac, options d’export sur iPhone), scannez moins de pages, plus simples, et retirez le mot de passe avant l’envoi.</span></div></li><li><span class="num">→</span><div><a href="/guides/fr/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY : les formats de date de naissance expliqués</strong></a><span>DD est le jour sur deux chiffres, MM le mois sur deux chiffres et YY ou YYYY l’année, toujours avec les zéros initiaux : le 7 mars 1994 donne 0703 en DDMM et 07031994 en DDMMYYYY.</span></div></li><li><span class="num">→</span><div><a href="/guides/fr/forgot-pdf-password.html"><strong>Mot de passe PDF oublié ? Ce que vous pouvez faire (2026)</strong></a><span>Un mot de passe PDF inconnu ne peut pas être retiré légitimement ; trouvez le format dans l’e-mail d’origine, retéléchargez le document ou demandez à l’expéditeur.</span></div></li><li><span class="num">→</span><div><a href="/guides/fr/how-bank-pdf-passwords-are-built.html"><strong>Comment sont construits les mots de passe des relevés bancaires PDF</strong></a><span>La plupart des mots de passe de relevé combinent deux informations que la banque détient déjà, comme les quatre premières lettres de votre nom plus votre date de naissance (DDMM), votre identifiant client, ou les derniers chiffres de votre carte ou de votre mobile.</span></div></li><li><span class="num">→</span><div><a href="/guides/fr/compress-scanned-pdf-for-upload-limits.html"><strong>Compresser un PDF scanné pour respecter la limite de taille</strong></a><span>Un PDF scanné est lourd car chaque page est une photo ; réduisez-le avec Aperçu (Réduire la taille du fichier sur Mac, options d’export sur iPhone), scannez moins de pages, plus simples, et retirez le mot de passe avant l’envoi.</span></div></li><li><span class="num">→</span><div><a href="/guides/fr/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY : les formats de date de naissance expliqués</strong></a><span>DD est le jour sur deux chiffres, MM le mois sur deux chiffres et YY ou YYYY l’année, toujours avec les zéros initiaux : le 7 mars 1994 donne 0703 en DDMM et 07031994 en DDMMYYYY.</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/fr/">Guides</a>
+      <a href="/support.html">Assistance</a>
+      <a href="/privacy.html">Confidentialité</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Conditions</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
