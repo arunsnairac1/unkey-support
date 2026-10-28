@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>வங்கி அறிக்கையிலிருந்து கணக்கு எண்ணை மறைப்பது (Redact) எப்படி · UnKey</title>
+  <meta name="description" content="கருப்புப் பெட்டி கணக்கு எண்ணை மறைக்காது; எழுத்து உள்ளேயே இருக்கும். உண்மையான redaction கருவியைப் (Mac-இல் Preview, Acrobat Pro, UnKey Pro) பயன்படுத்தி நகலைச் சோதியுங்கள்.">
+  <link rel="canonical" href="https://unkeypdf.app/guides/ta/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="ar" href="https://unkeypdf.app/guides/ar/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="de" href="https://unkeypdf.app/guides/de/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="en" href="https://unkeypdf.app/guides/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="es" href="https://unkeypdf.app/guides/es/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="hi" href="https://unkeypdf.app/guides/hi/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="id" href="https://unkeypdf.app/guides/id/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="pt" href="https://unkeypdf.app/guides/pt/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="ta" href="https://unkeypdf.app/guides/ta/redact-account-number-from-bank-statement.html">
+  <link rel="alternate" hreflang="x-default" href="https://unkeypdf.app/guides/redact-account-number-from-bank-statement.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="வங்கி அறிக்கையிலிருந்து கணக்கு எண்ணை மறைப்பது (Redact) எப்படி · UnKey">
+  <meta property="og:description" content="கருப்புப் பெட்டி கணக்கு எண்ணை மறைக்காது; எழுத்து உள்ளேயே இருக்கும். உண்மையான redaction கருவியைப் (Mac-இல் Preview, Acrobat Pro, UnKey Pro) பயன்படுத்தி நகலைச் சோதியுங்கள்.">
+  <meta property="og:url" content="https://unkeypdf.app/guides/ta/redact-account-number-from-bank-statement.html">
+  <meta property="og:image" content="https://unkeypdf.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6827252823">
+  <link rel="icon" href="/icon.png">
+  <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=7">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "வங்கி அறிக்கையிலிருந்து கணக்கு எண்ணை மறைப்பது (Redact) எப்படி", "description": "கருப்புப் பெட்டி கணக்கு எண்ணை மறைக்காது; எழுத்து உள்ளேயே இருக்கும். உண்மையான redaction கருவியைப் (Mac-இல் Preview, Acrobat Pro, UnKey Pro) பயன்படுத்தி நகலைச் சோதியுங்கள்.", "inLanguage": "ta", "dateModified": "2026-10-28", "datePublished": "2026-10-28", "mainEntityOfPage": "https://unkeypdf.app/guides/ta/redact-account-number-from-bank-statement.html", "author": {"@type": "Organization", "name": "UnKey", "url": "https://unkeypdf.app/"}, "publisher": {"@type": "Organization", "name": "UnKey", "logo": {"@type": "ImageObject", "url": "https://unkeypdf.app/icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ta", "mainEntity": [{"@type": "Question", "name": "கணக்கு எண்ணை வெறுமனே கருப்பில் ஹைலைட் செய்யலாமா?", "acceptedAnswer": {"@type": "Answer", "text": "கூடாது. ஹைலைட் அல்லது வடிவம் எழுத்தின் மேலே அமரும்; எழுத்தை இன்னும் நகலெடுக்கவோ தேடவோ முடியும். Redaction கருவியைப் பயன்படுத்துங்கள்."}}, {"@type": "Question", "name": "Preview-இன் redaction நிரந்தரமானதா?", "acceptedAnswer": {"@type": "Answer", "text": "ஆவணத்தை மூடியதும் redaction நிரந்தரமாகிவிடும் என்று Apple சொல்கிறது; எனவே நகலில் வேலை செய்யுங்கள்."}}, {"@type": "Question", "name": "redact செய்த அறிக்கையை வங்கி அல்லது தூதரகம் ஏற்குமா?", "acceptedAnswer": {"@type": "Answer", "text": "சில ஏற்கும், சில முழு ஆவணத்தை விரும்பும். அனுப்பும் முன் கேளுங்கள்."}}, {"@type": "Question", "name": "முதலில் PDF-ஐப் பூட்டு நீக்க வேண்டுமா?", "acceptedAnswer": {"@type": "Answer", "text": "ஆம். Redaction கருவிகள் கோப்பைத் திருத்த வேண்டும்; எனவே முதலில் திறப்பதற்கான கடவுச்சொல்லையும் கட்டுப்பாடுகளையும் நீக்குங்கள்."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "வழிகாட்டிகள்", "item": "https://unkeypdf.app/guides/ta/"}, {"@type": "ListItem", "position": 2, "name": "வங்கி அறிக்கையிலிருந்து கணக்கு எண்ணை மறைப்பது (Redact) எப்படி", "item": "https://unkeypdf.app/guides/ta/redact-account-number-from-bank-statement.html"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav class="nav" aria-label="Main">
+      <a class="label keep" href="/guides/ta/">வழிகாட்டிகள்</a>
+      <a class="label" href="/#tools">கருவிகள்</a>
+      <a class="label" href="/#pro">Pro</a>
+      <a class="label" href="/support.html">உதவி</a>
+      <a class="button small" href="https://apps.apple.com/app/id6827252823">ஆப்பைப் பெறுங்கள் <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="page guide">
+  <div class="wrap">
+    <p class="label crumbs"><a href="/guides/ta/">வழிகாட்டிகள்</a> · எப்படி செய்வது</p>
+    <h1 class="poster">வங்கி அறிக்கையிலிருந்து கணக்கு எண்ணை மறைப்பது (Redact) எப்படி</h1>
+    <p class="meta muted">அக்டோபர் 2026 அன்று புதுப்பிக்கப்பட்டது</p>
+    <p class="label langs">இந்த மொழியில் படிக்க: <a href="/guides/redact-account-number-from-bank-statement.html" hreflang="en" lang="en">English</a> · <a href="/guides/ar/redact-account-number-from-bank-statement.html" hreflang="ar" lang="ar">العربية</a> · <a href="/guides/de/redact-account-number-from-bank-statement.html" hreflang="de" lang="de">Deutsch</a> · <a href="/guides/es/redact-account-number-from-bank-statement.html" hreflang="es" lang="es">Español</a> · <a href="/guides/hi/redact-account-number-from-bank-statement.html" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/guides/id/redact-account-number-from-bank-statement.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/guides/pt/redact-account-number-from-bank-statement.html" hreflang="pt" lang="pt">Português</a> · <a href="/guides/ta/redact-account-number-from-bank-statement.html" hreflang="ta" lang="ta" aria-current="page">தமிழ்</a></p>
+    <div class="prose">
+      <p class="callout">கணக்கு எண்ணின் மேல் கருப்பு வடிவம் வரைந்தால் எழுத்து கோப்பில் அப்படியே இருக்கும்; Mac-இல் Preview-இன் Redaction Selection, Acrobat Pro-வின் Redact கருவி அல்லது UnKey Pro போன்ற உண்மையான redaction கருவியைப் பயன்படுத்தி, மறைத்த எழுத்தை நகலெடுக்கவோ தேடவோ முடியாது என்று சோதியுங்கள்.</p>
+      
+      <p>வங்கி அறிக்கையைப் பகிரும் முன் கணக்கு எண், கார்டு எண் அல்லது இருப்பை மறைக்க, கருப்புப் பெட்டி அல்லது ஹைலைட்டர் அல்ல, உண்மையான <strong>redaction</strong> (எழுத்தை நிரந்தரமாக நீக்கும்) கருவியைப் பயன்படுத்துங்கள். PDF-இல் ஒரு வடிவத்தை வரைந்தால் மேலே ஒரு அடுக்கு மட்டுமே சேரும். அசல் எழுத்து அங்கேயே இருக்கும்; அதை நகலெடுக்கவோ, தேடவோ, அந்த வடிவத்தை நீக்கி வெளிப்படுத்தவோ முடியும். சரியான redaction எழுத்தையே நீக்கிவிடும்.</p><h2>கருப்புச் செவ்வகம் ஏன் போதாது</h2><p>PDF markup கருவிகள் (வடிவங்கள், ஹைலைட்டுகள், கையொப்பங்கள்) பக்கத்தின் மேல் அமரும் குறிப்புகளைச் (annotations) சேர்க்கின்றன. அவற்றின் கீழுள்ள எழுத்தை எவரும் தேர்ந்தெடுக்கலாம், தேடலாம், அல்லது வேறொரு செயலியில் அந்தக் குறிப்பை நீக்கலாம். Redaction கருவிகள் வேறுபட்டவை: அவை உள்ளடக்கத்தை நீக்கி அந்த இடத்தில் கருப்புப் பகுதியை விடுகின்றன.</p><h2>Mac: Preview-இன் Redaction Selection</h2><ol><li>முதலில் அறிக்கையின் பூட்டை நீக்குங்கள், பிறகு அசல் அப்படியே இருக்க ஒரு நகலை உருவாக்குங்கள் (<strong>File &gt; Duplicate</strong>).</li><li>நகலை Preview-இல் திறந்து Markup கருவிப்பட்டையைக் காட்டுங்கள்.</li><li><strong>Redaction Selection</strong> கருவியைத் தேர்ந்தெடுத்து, கணக்கு எண்ணையும் மறைக்க விரும்பும் பிறவற்றையும் தேர்ந்தெடுங்கள்.</li><li>ஆவணத்தைச் சேமித்து மூடுங்கள்.</li></ol><p>இந்தக் கருவியை Apple “எழுத்தைத் தேர்ந்தெடுத்து பார்வையிலிருந்து நீக்கு” என்று விவரிக்கிறது, மேலும் “தொகுக்கும்போது redaction-ஐ மாற்றலாம், ஆனால் ஆவணத்தை மூடியதும் redaction நிரந்தரமாகிவிடும்” என்று சேர்க்கிறது. மறைக்கப்பட்ட எழுத்துடன் இணைக்கும் உள்ளடக்க அட்டவணை உள்ளீடுகள் நீக்கப்படாது என்றும் Apple எச்சரிக்கிறது (<a href="https://support.apple.com/guide/preview/annotate-a-pdf-prvw11580/mac">Apple: Annotate a PDF in Preview on Mac</a>). அறிக்கைகளில் அது அரிதாகவே இருக்கும், ஆனாலும் சோதியுங்கள்.</p><h2>Windows அல்லது Mac: Adobe Acrobat Pro</h2><p>Acrobat Pro-வில் பிரத்யேக Redact கருவியும், மெட்டாடேட்டா போன்ற மறைந்த தகவல்களை நீக்கும் sanitise விருப்பமும் உள்ளன (<a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/redacting-sanitizing.html">Adobe: Redact and sanitize PDFs in Acrobat Pro</a>). இது கட்டண வசதி. இலவச Acrobat Reader redact செய்யாது.</p><h2>iPhone, iPad, Mac: UnKey Pro</h2><p><a href="/">UnKey</a> Pro-வில் Redact கருவி உள்ளது. கணக்கு எண், உங்கள் பெயர் போன்ற மறைக்க வேண்டியதைத் தட்டச்சு செய்தால், எழுத்துகளை விசித்திரமாக இடைவெளியிட்ட அறிக்கைகள் உட்பட, பொருந்தும் ஒவ்வொன்றையும் அது கண்டுபிடிக்கும். நீங்கள் செயல்படுத்தும்போது, குறியுள்ள ஒவ்வொரு பக்கமும் படமாகத் தட்டையாக்கப்பட்டு குறிகள் கருப்பாக வரையப்படும்; எனவே கீழே எந்த எழுத்தும் எஞ்சாது. குறி இல்லாத பக்கங்கள் இருந்தபடியே இருக்கும். இது ஆஃப்லைனில் இயங்கும். Redact, ஒருமுறை செலுத்தும் Pro வாங்குதலின் பகுதி.</p><p>iPhone-இல் உள்ளமைந்த Markup, Preview கருவிகள் வடிவங்களையும் கையொப்பங்களையும் சேர்க்கும், ஆனால் அவை redaction கருவிகள் என்று Apple ஆவணப்படுத்தவில்லை; எனவே அங்குள்ள கருப்பு வடிவத்தை நீக்கம் அல்ல, மூடி என்றே கருதுங்கள்.</p><h2>அறிக்கையில் எதை மறைப்பது</h2><ul><li>முழு கணக்கு எண், கார்டு எண்கள் (பெரும்பாலும் கடைசி 4 இலக்கங்களை விட்டுவிடலாம்).</li><li>Customer ID, CRN அல்லது CIF எண்; இது சில அறிக்கைக் கடவுச்சொற்களின் பகுதியும் கூட.</li><li>பெறுபவருக்குத் தேவையில்லை என்றால் முகவரி, மொபைல் எண், மின்னஞ்சல்.</li><li>பெறுபவர் ஒப்புக்கொண்டால், நோக்கத்துடன் தொடர்பில்லாத பரிவர்த்தனைகள். சில கடன் வழங்குநர்களும் தூதரகங்களும் முழு அறிக்கையை விரும்புவார்கள்; எனவே முதலில் கேளுங்கள்.</li></ul><h2>Redact செய்த நகலைச் சோதியுங்கள்</h2><ol><li>புதிய கோப்பைத் திறந்து கணக்கு எண்ணைத் தேடுங்கள். அது கிடைக்கக்கூடாது.</li><li>கருப்புப் பகுதியில் எழுத்தைத் தேர்ந்தெடுத்து நகலெடுத்து, எங்காவது ஒட்டிப் பாருங்கள். எதுவும் வரக்கூடாது.</li><li>கோப்புப் பெயரையும் ஆவணப் பண்புகளையும் பாருங்கள். அவற்றில் சில சமயம் கணக்கு எண் இருக்கும்.</li></ol><p>அறிக்கை உண்மையானது என்று யாராவது சரிபார்க்க வேண்டுமென்றால், redaction ஏற்கப்படாமல் போகலாம்; ஏனெனில் அது ஆவணத்தை மாற்றுகிறது. அவர்களுக்கு என்ன தேவை என்று கேளுங்கள். பாதுகாப்பாகப் பகிர, <a href="/guides/is-it-safe-to-remove-pdf-password.html">PDF கடவுச்சொல்லை நீக்குவது பாதுகாப்பானதா</a> என்பதைப் பாருங்கள்.</p>
+      <h2>கேள்விகள்</h2>
+      <div class="faq"><details><summary>கணக்கு எண்ணை வெறுமனே கருப்பில் ஹைலைட் செய்யலாமா?</summary><p>கூடாது. ஹைலைட் அல்லது வடிவம் எழுத்தின் மேலே அமரும்; எழுத்தை இன்னும் நகலெடுக்கவோ தேடவோ முடியும். Redaction கருவியைப் பயன்படுத்துங்கள்.</p></details><details><summary>Preview-இன் redaction நிரந்தரமானதா?</summary><p>ஆவணத்தை மூடியதும் redaction நிரந்தரமாகிவிடும் என்று Apple சொல்கிறது; எனவே நகலில் வேலை செய்யுங்கள்.</p></details><details><summary>redact செய்த அறிக்கையை வங்கி அல்லது தூதரகம் ஏற்குமா?</summary><p>சில ஏற்கும், சில முழு ஆவணத்தை விரும்பும். அனுப்பும் முன் கேளுங்கள்.</p></details><details><summary>முதலில் PDF-ஐப் பூட்டு நீக்க வேண்டுமா?</summary><p>ஆம். Redaction கருவிகள் கோப்பைத் திருத்த வேண்டும்; எனவே முதலில் திறப்பதற்கான கடவுச்சொல்லையும் கட்டுப்பாடுகளையும் நீக்குங்கள்.</p></details></div>
+      <h2>ஆதாரங்கள்</h2>
+      <ul class="sources"><li><a href="https://support.apple.com/guide/preview/annotate-a-pdf-prvw11580/mac">Apple – Annotate a PDF in Preview on Mac (Redaction Selection)</a></li><li><a href="https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/redacting-sanitizing.html">Adobe – Redact and sanitize PDFs in Acrobat Pro</a></li></ul>
+      <p class="muted small">வடிவங்கள் மாறலாம். கடவுச்சொல் வேலை செய்யவில்லை என்றால், ஆவணத்துடன் வந்த மின்னஞ்சலைப் பாருங்கள் அல்லது வழங்கிய நிறுவனத்தைத் தொடர்பு கொள்ளுங்கள். இங்கே குறிப்பிடப்பட்டுள்ள எந்த வங்கி, நிறுவனம் அல்லது அதிகார அமைப்புடனும் UnKey-க்கு தொடர்பு இல்லை.</p>
+      <p class="muted small">ஆங்கிலத்திலிருந்து மொழிபெயர்க்கப்பட்டது. ஏதேனும் வேறுபாடு இருந்தால், ஆங்கிலப் பக்கமே அடிப்படை.</p>
+    </div>
+    <aside class="cta">
+      <p class="poster cta-title">ஒருமுறை <span class="hl" dir="auto">திறந்தால் போதும்.</span></p>
+      <p>நீங்கள் ஏற்கெனவே திறக்கக்கூடிய PDF-களிலிருந்து UnKey கடவுச்சொல்லை நீக்குகிறது, iPhone, iPad மற்றும் Mac-இல். ஆஃப்லைனில் இயங்கும், எதுவும் பதிவேற்றப்படாது. கடவுச்சொல்லை ஒருமுறை சேமித்தால், அடுத்த மாத ஸ்டேட்மென்ட்டை Face ID திறக்கும்.</p>
+      <a class="button" href="https://apps.apple.com/app/id6827252823">UnKey-ஐப் பெறுங்கள் <span class="arrow" aria-hidden="true">→</span></a>
+    </aside>
+    <section class="related" aria-label="தொடர்புடைய வழிகாட்டிகள்">
+      <div class="section-head"><span class="label">தொடர்புடைய வழிகாட்டிகள்</span></div>
+      <ol class="rows"><li><span class="num">→</span><div><a href="/guides/ta/compress-scanned-pdf-for-upload-limits.html"><strong>பதிவேற்ற அளவு வரம்புக்காக ஸ்கேன் PDF-ஐ சுருக்குவது எப்படி</strong></a><span>ஸ்கேன் PDF-இல் ஒவ்வொரு பக்கமும் ஒரு புகைப்படம் என்பதால் பெரிதாகிறது; Mac-இல் Preview-இன் Reduce File Size, iPhone-இல் Preview-இன் export விருப்பங்களைப் பயன்படுத்துங்கள், குறைவான எளிய பக்கங்களை ஸ்கேன் செய்யுங்கள், பதிவேற்றும் முன் கடவுச்சொல்லை நீக்குங்கள்.</span></div></li><li><span class="num">→</span><div><a href="/guides/ta/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: பிறந்த தேதி வடிவங்கள் விளக்கம்</strong></a><span>DD என்பது இரண்டு இலக்க நாள், MM இரண்டு இலக்க மாதம், YY அல்லது YYYY ஆண்டு; எப்போதும் முன்னால் பூஜ்யத்துடன்: 7 மார்ச் 1994 என்பது DDMM-இல் 0703, DDMMYYYY-இல் 07031994.</span></div></li><li><span class="num">→</span><div><a href="/guides/ta/forgot-pdf-password.html"><strong>PDF கடவுச்சொல்லை மறந்துவிட்டீர்களா? செய்யக்கூடியவை (2026)</strong></a><span>தெரியாத PDF கடவுச்சொல்லை முறையாக நீக்க முடியாது; அசல் மின்னஞ்சலில் வடிவத்தைக் கண்டறியுங்கள், ஆவணத்தை மீண்டும் பதிவிறக்குங்கள், அல்லது அனுப்பியவரிடம் கேளுங்கள்.</span></div></li><li><span class="num">→</span><div><a href="/guides/ta/how-bank-pdf-passwords-are-built.html"><strong>வங்கி அறிக்கை PDF கடவுச்சொற்கள் எப்படி உருவாக்கப்படுகின்றன</strong></a><span>பெரும்பாலான அறிக்கைக் கடவுச்சொற்கள், வங்கியிடம் ஏற்கெனவே உள்ள இரண்டு விவரங்களை இணைக்கின்றன: பெயரின் முதல் நான்கு எழுத்துகளும் பிறந்த தேதியும் (DDMM), வாடிக்கையாளர் ID, அல்லது கார்டு/மொபைல் எண்ணின் கடைசி இலக்கங்கள்.</span></div></li><li><span class="num">→</span><div><a href="/guides/ta/compress-scanned-pdf-for-upload-limits.html"><strong>பதிவேற்ற அளவு வரம்புக்காக ஸ்கேன் PDF-ஐ சுருக்குவது எப்படி</strong></a><span>ஸ்கேன் PDF-இல் ஒவ்வொரு பக்கமும் ஒரு புகைப்படம் என்பதால் பெரிதாகிறது; Mac-இல் Preview-இன் Reduce File Size, iPhone-இல் Preview-இன் export விருப்பங்களைப் பயன்படுத்துங்கள், குறைவான எளிய பக்கங்களை ஸ்கேன் செய்யுங்கள், பதிவேற்றும் முன் கடவுச்சொல்லை நீக்குங்கள்.</span></div></li><li><span class="num">→</span><div><a href="/guides/ta/date-of-birth-formats-ddmm-ddmmyyyy-explained.html"><strong>DDMM, DDMMYY, DDMMYYYY: பிறந்த தேதி வடிவங்கள் விளக்கம்</strong></a><span>DD என்பது இரண்டு இலக்க நாள், MM இரண்டு இலக்க மாதம், YY அல்லது YYYY ஆண்டு; எப்போதும் முன்னால் பூஜ்யத்துடன்: 7 மார்ச் 1994 என்பது DDMM-இல் 0703, DDMMYYYY-இல் 07031994.</span></div></li></ol>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="/">UNKEY</a>
+    <nav aria-label="Footer">
+      <a href="/guides/ta/">வழிகாட்டிகள்</a>
+      <a href="/support.html">உதவி</a>
+      <a href="/privacy.html">தனியுரிமை</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">விதிமுறைகள்</a>
+      <span class="muted">© 2026 UnKey</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
