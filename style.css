@@ -341,5 +341,11 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .langs a:hover, .langs a[aria-current] { text-decoration: underline; text-underline-offset: 4px; }
 h3.cat { margin: 26px 0 8px; }
 [dir="rtl"] .rows li { direction: rtl; }
-[dir="rtl"] .button .arrow, [dir="rtl"] .rows .num { transform: scaleX(-1); display: inline-block; }
+[dir="rtl"] .button .arrow { transform: scaleX(-1); display: inline-block; }
 [dir="rtl"] .prose th, [dir="rtl"] .prose td { text-align: right; }
+
+/* Guides stays in the top menu on phones; the other text links fold away. */
+@media (max-width: 820px) {
+  .nav .label.keep { display: inline; }
+  .nav { gap: 16px; }
+}
