@@ -320,3 +320,26 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .related { padding: 56px 0 0; }
 .related .rows a { text-decoration: none; }
 .related .rows a:hover strong { text-decoration: underline; }
+
+/* Languages: the poster face (Anton) is Latin-only. Other scripts use the system's bold face with
+   room for marks above and below the line, so nothing is clipped. */
+:lang(hi) .poster, :lang(mr) .poster, :lang(ne) .poster, :lang(ta) .poster, :lang(te) .poster,
+:lang(ml) .poster, :lang(kn) .poster, :lang(bn) .poster, :lang(gu) .poster, :lang(si) .poster,
+:lang(th) .poster, :lang(ar) .poster, :lang(ur) .poster {
+  font-family: var(--body);
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0;
+}
+:lang(vi) .poster { line-height: 1.08; }
+.guide h1:lang(hi), .guide h1:lang(ta), .guide h1:lang(ml), .guide h1:lang(te), .guide h1:lang(kn),
+.guide h1:lang(bn), .guide h1:lang(mr), .guide h1:lang(gu), .guide h1:lang(si), .guide h1:lang(ne),
+.guide h1:lang(th), .guide h1:lang(ar), .guide h1:lang(ur) { font-size: clamp(32px, 5.5vw, 60px); }
+.langs { margin: 0 0 28px; line-height: 2; }
+.langs a { text-decoration: none; margin-inline-end: 2px; }
+.langs a:hover, .langs a[aria-current] { text-decoration: underline; text-underline-offset: 4px; }
+h3.cat { margin: 26px 0 8px; }
+[dir="rtl"] .rows li { direction: rtl; }
+[dir="rtl"] .button .arrow, [dir="rtl"] .rows .num { transform: scaleX(-1); display: inline-block; }
+[dir="rtl"] .prose th, [dir="rtl"] .prose td { text-align: right; }
